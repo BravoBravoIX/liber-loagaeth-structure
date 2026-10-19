@@ -1,0 +1,96 @@
+{
+ "what": "L3 primary family, Holm-corrected",
+ "prereg_commit": "7127723",
+ "tests": [
+  {
+   "test": "P1a",
+   "file": "results/l3_q1.json",
+   "controls": 10000,
+   "observed": 0.2648731105221629,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  },
+  {
+   "test": "P1b",
+   "file": "results/l3_q1.json",
+   "controls": 10000,
+   "observed": 0.20669401947855331,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  },
+  {
+   "test": "P2a",
+   "file": "results/l3_q2rep.json",
+   "controls": 10000,
+   "observed": 6679,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  },
+  {
+   "test": "P2b",
+   "file": "results/l3_q2pair.json",
+   "controls": 10000,
+   "observed": -0.021123878892354675,
+   "p": 0.7297270272972702,
+   "p_holm": 1.0,
+   "significant_holm_0.05": false
+  },
+  {
+   "test": "P2c",
+   "file": "results/l3_q2rep.json",
+   "controls": 10000,
+   "observed": 6436,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  },
+  {
+   "test": "P3a",
+   "file": "results/l3_q3a.json",
+   "controls": 10000,
+   "observed": -14381.850305459948,
+   "p": 0.8572142785721428,
+   "p_holm": 1.0,
+   "significant_holm_0.05": false
+  },
+  {
+   "test": "P4a",
+   "file": "results/l3_q4.json",
+   "controls": 10000,
+   "observed": 50,
+   "p": 0.9248075192480751,
+   "p_holm": 1.0,
+   "significant_holm_0.05": false
+  },
+  {
+   "test": "P4b",
+   "file": "results/l3_q4.json",
+   "controls": 10000,
+   "observed": 0.49911664598594463,
+   "p": 0.1839080459770115,
+   "p_holm": 0.735632183908046,
+   "significant_holm_0.05": false
+  },
+  {
+   "test": "P5a",
+   "file": "results/l3_q5.json",
+   "controls": 10000,
+   "observed": 1.3280577530969087,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  },
+  {
+   "test": "P5c",
+   "file": "results/l3_q5.json",
+   "controls": 10000,
+   "observed": 501.9458074205189,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.000999900009999,
+   "significant_holm_0.05": true
+  }
+ ]
+}

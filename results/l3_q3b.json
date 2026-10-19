@@ -1,0 +1,22 @@
+{
+ "test_group": "q3b",
+ "prereg_commit": "7127723",
+ "seed": 20261019,
+ "controls": 10000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "S3b": {
+  "statistic": "mean longest string shared with the 3 rows above (held-out rows)",
+  "observed": 5.067901234567901,
+  "p_one_sided": 0.0471952804719528,
+  "controls": {
+   "mean": 4.980167695473251,
+   "sd": 0.05114177632493351,
+   "q025": 4.878600823045267,
+   "q975": 5.082304526748971,
+   "max": 5.172839506172839,
+   "min": 4.7860082304526745
+  }
+ }
+}

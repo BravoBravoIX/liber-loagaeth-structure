@@ -1,0 +1,104 @@
+{
+ "test_group": "q2rep",
+ "prereg_commit": "7127723",
+ "seed": 20261019,
+ "controls": 10000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "P2a": {
+  "statistic": "distinct 8-grams occurring 2+ times in G",
+  "observed": 6679,
+  "p_one_sided": 9.999000099990002e-05,
+  "controls_markov": {
+   "mean": 1243.8859,
+   "sd": 48.533712831288724,
+   "q025": 1149.0,
+   "q975": 1339.0,
+   "max": 1423.0,
+   "min": 1070.0
+  }
+ },
+ "P2c": {
+  "statistic": "distinct 8-grams on 2+ sides of G",
+  "observed": 6436,
+  "p_one_sided": 9.999000099990002e-05,
+  "controls_markov": {
+   "mean": 1193.2226,
+   "sd": 47.4342645061563,
+   "q025": 1100.0,
+   "q975": 1285.0,
+   "max": 1367.0,
+   "min": 1032.0
+  }
+ },
+ "S2a": {
+  "rep12": {
+   "observed": 391,
+   "p_markov": 9.999000099990002e-05,
+   "controls_markov": {
+    "mean": 1.7901,
+    "sd": 1.628202072839855,
+    "q025": 0.0,
+    "q975": 6.0,
+    "max": 12.0,
+    "min": 0.0
+   },
+   "p_row_shuffle": 9.999000099990002e-05,
+   "controls_row_shuffle": {
+    "mean": 0.0003,
+    "sd": 0.017317909804592472,
+    "q025": 0.0,
+    "q975": 0.0,
+    "max": 1.0,
+    "min": 0.0
+   }
+  },
+  "shared12": {
+   "observed": 365,
+   "p_markov": 9.999000099990002e-05,
+   "controls_markov": {
+    "mean": 1.6419,
+    "sd": 1.5433289960342222,
+    "q025": 0.0,
+    "q975": 5.0,
+    "max": 11.0,
+    "min": 0.0
+   }
+  },
+  "rep8_row_shuffle": {
+   "observed": 6679,
+   "p": 9.999000099990002e-05,
+   "controls": {
+    "mean": 17.5366,
+    "sd": 4.569579897539817,
+    "q025": 9.0,
+    "q975": 27.0,
+    "max": 36.0,
+    "min": 4.0
+   }
+  },
+  "longest_repeat": {
+   "observed": 17,
+   "controls_n": 200,
+   "p_markov": 0.004975124378109453,
+   "markov": {
+    "mean": 12.1,
+    "sd": 0.8185352771872451,
+    "q025": 11.0,
+    "q975": 14.0,
+    "max": 15.0,
+    "min": 11.0
+   },
+   "p_row_shuffle": 0.004975124378109453,
+   "row_shuffle": {
+    "mean": 8.915,
+    "sd": 0.5897245119545226,
+    "q025": 8.0,
+    "q975": 10.0,
+    "max": 10.0,
+    "min": 8.0
+   }
+  }
+ }
+}

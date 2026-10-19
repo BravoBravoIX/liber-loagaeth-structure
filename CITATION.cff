@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Liber Loagaeth: a pre-registered structural study of the tables"
+authors:
+  - family-names: Burford
+    given-names: Brett
+    orcid: "https://orcid.org/0009-0003-6599-8297"
+version: "1.0"
+date-released: 2026-10-19
+repository-code: "https://github.com/BravoBravoIX/liber-loagaeth-structure"

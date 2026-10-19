@@ -1,0 +1,11 @@
+{
+ "_note": "Pixel box [left, top, right, bottom] of the 49 x 49 grid on each anasofiadias page image (Sloane MS 3189, folio = leaf + 8), estimated by eye from reduced copies; used only to place crops for checking by eye.",
+ "2a": [187, 438, 1704, 1956],
+ "3b": [91, 496, 1591, 2047],
+ "5b": [86, 475, 1608, 2002],
+ "7a": [85, 496, 1578, 2043],
+ "7b": [66, 477, 1556, 2037],
+ "8b": [65, 450, 1571, 2006],
+ "9a": [60, 444, 1573, 1982],
+ "12b": [95, 479, 1659, 2032]
+}

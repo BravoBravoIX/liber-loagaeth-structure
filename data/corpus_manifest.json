@@ -1,0 +1,848 @@
+{
+ "what": "Coordinate-addressed corpus of Liber Loagaeth from Peterson's edition (L0)",
+ "input": {
+  "file": "peterson/sl3189.htm",
+  "sha256": "8d1c0ebfb884248d0cb88cc76edc05b7f54cee0f7e4169878f22af662d81b8f3"
+ },
+ "outputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18",
+  "rows.json": "b7700a3d7260a40f8ba83ae3a22cb2fe13b56a23dbb5e43ec3921c2d30fb3e05"
+ },
+ "sides": 96,
+ "cells": 196721,
+ "cells_by_layout": {
+  "words": 18686,
+  "grid": 130047,
+  "centre": 47988
+ },
+ "alpha_letters": 196353,
+ "digits": 377,
+ "letter_counts": {
+  "0": 1,
+  "1": 36,
+  "2": 52,
+  "3": 52,
+  "4": 51,
+  "5": 53,
+  "6": 55,
+  "7": 52,
+  "8": 20,
+  "9": 5,
+  "a": 37315,
+  "b": 2344,
+  "c": 9134,
+  "d": 11132,
+  "e": 8429,
+  "f": 685,
+  "g": 7811,
+  "h": 13544,
+  "i": 3502,
+  "j": 2,
+  "k": 2,
+  "l": 12001,
+  "m": 3555,
+  "n": 17154,
+  "o": 17807,
+  "p": 6003,
+  "q": 225,
+  "r": 10685,
+  "s": 3194,
+  "t": 7387,
+  "u": 3939,
+  "v": 6261,
+  "w": 3,
+  "x": 8627,
+  "y": 1016,
+  "z": 4596
+ },
+ "flag_counts": {
+  "accent": 1760,
+  "apostrophe": 141,
+  "capital": 1269,
+  "caret": 1,
+  "colon": 13,
+  "comma": 165,
+  "digit": 377,
+  "multi": 5,
+  "orient:/": 5956,
+  "orient:`": 3600,
+  "orient:~": 4678,
+  "semicolon": 2,
+  "small": 1,
+  "struck": 35,
+  "uncertain": 65,
+  "word_end": 5638
+ },
+ "rows_with_sic": 3,
+ "folio_note": "folio = leaf + 8 (recto a, verso b): Peterson marks f. 10r at leaf 2a; confirmed on the images of 8 sides (data/image_checks.json)",
+ "per_side": {
+  "1a": {
+   "folio": null,
+   "layout": "words",
+   "rows": 49,
+   "cells": 10862,
+   "alpha_letters": 10862,
+   "rows_not_49": 49
+  },
+  "1b": {
+   "folio": null,
+   "layout": "words",
+   "rows": 40,
+   "cells": 8265,
+   "alpha_letters": 8265,
+   "rows_not_49": 31
+  },
+  "2a": {
+   "folio": "10r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "2b": {
+   "folio": "10v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "3a": {
+   "folio": "11r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "3b": {
+   "folio": "11v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2402,
+   "rows_not_49": 1
+  },
+  "4a": {
+   "folio": "12r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "4b": {
+   "folio": "12v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "5a": {
+   "folio": "13r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2402,
+   "rows_not_49": 0
+  },
+  "5b": {
+   "folio": "13v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "6a": {
+   "folio": "14r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "6b": {
+   "folio": "14v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "7a": {
+   "folio": "15r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "7b": {
+   "folio": "15v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2400,
+   "rows_not_49": 1
+  },
+  "8a": {
+   "folio": "16r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "8b": {
+   "folio": "16v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2364,
+   "alpha_letters": 2364,
+   "rows_not_49": 37
+  },
+  "9a": {
+   "folio": "17r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2025,
+   "rows_not_49": 0
+  },
+  "9b": {
+   "folio": "17v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2402,
+   "rows_not_49": 1
+  },
+  "10a": {
+   "folio": "18r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "10b": {
+   "folio": "18v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2400,
+   "rows_not_49": 1
+  },
+  "11a": {
+   "folio": "19r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "11b": {
+   "folio": "19v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2402,
+   "rows_not_49": 1
+  },
+  "12a": {
+   "folio": "20r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "12b": {
+   "folio": "20v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2397,
+   "alpha_letters": 2397,
+   "rows_not_49": 4
+  },
+  "13a": {
+   "folio": "21r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "13b": {
+   "folio": "21v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "14a": {
+   "folio": "22r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "14b": {
+   "folio": "22v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "15a": {
+   "folio": "23r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "15b": {
+   "folio": "23v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "16a": {
+   "folio": "24r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "16b": {
+   "folio": "24v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2400,
+   "rows_not_49": 1
+  },
+  "17a": {
+   "folio": "25r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "17b": {
+   "folio": "25v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2400,
+   "alpha_letters": 2400,
+   "rows_not_49": 1
+  },
+  "18a": {
+   "folio": "26r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "18b": {
+   "folio": "26v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "19a": {
+   "folio": "27r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "19b": {
+   "folio": "27v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "20a": {
+   "folio": "28r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "20b": {
+   "folio": "28v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "21a": {
+   "folio": "29r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "21b": {
+   "folio": "29v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "22a": {
+   "folio": "30r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "22b": {
+   "folio": "30v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "23a": {
+   "folio": "31r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "23b": {
+   "folio": "31v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "24a": {
+   "folio": "32r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "24b": {
+   "folio": "32v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "25a": {
+   "folio": "33r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "25b": {
+   "folio": "33v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2400,
+   "rows_not_49": 0
+  },
+  "26a": {
+   "folio": "34r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "26b": {
+   "folio": "34v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "27a": {
+   "folio": "35r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "27b": {
+   "folio": "35v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "28a": {
+   "folio": "36r",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "28b": {
+   "folio": "36v",
+   "layout": "grid",
+   "rows": 49,
+   "cells": 2401,
+   "alpha_letters": 2401,
+   "rows_not_49": 0
+  },
+  "29a": {
+   "folio": "37r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "29b": {
+   "folio": "37v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "30a": {
+   "folio": "38r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "30b": {
+   "folio": "38v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "31a": {
+   "folio": "39r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "31b": {
+   "folio": "39v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "32a": {
+   "folio": "40r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "32b": {
+   "folio": "40v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "33a": {
+   "folio": "41r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "33b": {
+   "folio": "41v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "34a": {
+   "folio": "42r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "34b": {
+   "folio": "42v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "35a": {
+   "folio": "43r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "35b": {
+   "folio": "43v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "36a": {
+   "folio": "44r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "36b": {
+   "folio": "44v",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1176,
+   "alpha_letters": 1176,
+   "rows_not_49": 48
+  },
+  "37a": {
+   "folio": "45r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "37b": {
+   "folio": "45v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "38a": {
+   "folio": "46r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "38b": {
+   "folio": "46v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "39a": {
+   "folio": "47r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "39b": {
+   "folio": "47v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "40a": {
+   "folio": "48r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "40b": {
+   "folio": "48v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "41a": {
+   "folio": "49r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1195,
+   "alpha_letters": 1197,
+   "rows_not_49": 48
+  },
+  "41b": {
+   "folio": "49v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "42a": {
+   "folio": "50r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "42b": {
+   "folio": "50v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "43a": {
+   "folio": "51r",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "43b": {
+   "folio": "51v",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "44a": {
+   "folio": "52r",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "44b": {
+   "folio": "52v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "45a": {
+   "folio": "53r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "45b": {
+   "folio": "53v",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "46a": {
+   "folio": "54r",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1199,
+   "alpha_letters": 1199,
+   "rows_not_49": 49
+  },
+  "46b": {
+   "folio": "54v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "47a": {
+   "folio": "55r",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1199,
+   "alpha_letters": 1199,
+   "rows_not_49": 48
+  },
+  "47b": {
+   "folio": "55v",
+   "layout": "centre",
+   "rows": 48,
+   "cells": 1200,
+   "alpha_letters": 1200,
+   "rows_not_49": 48
+  },
+  "48a": {
+   "folio": "56r",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  },
+  "48b": {
+   "folio": "56v",
+   "layout": "centre",
+   "rows": 49,
+   "cells": 1201,
+   "alpha_letters": 1201,
+   "rows_not_49": 48
+  }
+ }
+}

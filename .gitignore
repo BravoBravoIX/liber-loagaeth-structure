@@ -1,0 +1,6 @@
+# Third-party sources (scripts/fetch_sources.sh) and everything rebuilt from them by
+# code/run_all.sh; none of it is redistributed
+sources/downloads/
+work/
+__pycache__/
+*.part

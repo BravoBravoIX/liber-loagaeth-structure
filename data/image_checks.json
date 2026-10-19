@@ -1,0 +1,199 @@
+{
+ "what": "L0 spot checks of the corpus against the anasofiadias page images of Sloane MS 3189 (folio = leaf + 8), read by eye on enlarged crops. The images (rights unclear) and the crops are not included; the readings of whole row segments are left out because they reproduce the edition's text. Counts and short cell references only.. Kelley writes a secretary hand: c looks like a modern r, r like x or z, e like a reversed 3, h like a long-tailed s, g like y; readings below allow for this.",
+ "date": "2026-10-19",
+ "reader": "Claude agent (not a palaeographer); each reading is of a whole row segment in context",
+ "folio_mapping": [
+  {
+   "side": "2a",
+   "folio": "10r",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "5b",
+   "folio": "13v",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "7a",
+   "folio": "15r",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "7b",
+   "folio": "15v",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "8b",
+   "folio": "16v",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "9a",
+   "folio": "17r",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "12b",
+   "folio": "20v",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  },
+  {
+   "side": "3b",
+   "folio": "11v",
+   "check": "side title and, where written, the folio number on the image",
+   "result": "confirmed"
+  }
+ ],
+ "disagreements": [
+  {
+   "where": "5b, whole side",
+   "peterson": "Peterson's 5b",
+   "lorselq": "a copy of 4b's grid (all 49 rows identical to 4b)",
+   "image": "row 1 of f. 13v matches Peterson's 5b, not 4b",
+   "right": "peterson",
+   "note": "a file error in lorselq (leaf05b.json duplicates leaf04b.json); accounts for 3,033 of the 3,035 letter disagreements"
+  },
+  {
+   "where": "7a row 4 col 49",
+   "peterson": "d",
+   "lorselq": "dd",
+   "image": "a single d in the last cell",
+   "right": "peterson"
+  },
+  {
+   "where": "7b row 20",
+   "peterson": "48 cells",
+   "lorselq": "49 cells, an extra a at the end",
+   "image": "the row ends with one a in the last cell; there is an empty cell after the 8th letter",
+   "right": "peterson (48 letters); but Peterson's column numbers for cells after the gap are one too low"
+  },
+  {
+   "where": "12b rows 30-33 col 49",
+   "peterson": "48 cells (nothing printed)",
+   "lorselq": "[LACUNA]?",
+   "image": "the right edge of the page is darkened and damaged on these rows; the last cell is not legible",
+   "right": "both (a lacuna; lorselq marks it, Peterson leaves it out)"
+  },
+  {
+   "where": "8b rows 5-42 (37 rows of 48 cells)",
+   "peterson": "48 cells",
+   "lorselq": "48 letters + [NULL] at the end",
+   "image": "rows 5-10 checked: the last column is empty in the manuscript (rows 3-4 have a letter there)",
+   "right": "both"
+  },
+  {
+   "where": "9a row 15, the g before the numbers",
+   "peterson": "a g, then the digits 1 2 1 2 3 4",
+   "lorselq": "same (with a note doubting the g's place)",
+   "image": "a g written beside the preceding x, then the digits",
+   "right": "both"
+  }
+ ],
+ "random_sample": {
+  "method": "one 10-cell row segment per side with an image: Python random.Random(20261019), sides in leaf order, row = randint(1, 49), first column = randint(1, 40); each segment read by eye in context against the edition",
+  "segments": [
+   {
+    "side": "2a",
+    "row": 38,
+    "cols": "21-30",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0
+   },
+   {
+    "side": "3b",
+    "row": 47,
+    "cols": "8-17",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0
+   },
+   {
+    "side": "5b",
+    "row": 14,
+    "cols": "31-40",
+    "agree": 9,
+    "doubtful": 1,
+    "disagree": 0,
+    "note": "col 36 (p) not clear enough to confirm"
+   },
+   {
+    "side": "7a",
+    "row": 35,
+    "cols": "19-28",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0
+   },
+   {
+    "side": "7b",
+    "row": 18,
+    "cols": "2-11",
+    "agree": 9,
+    "doubtful": 1,
+    "disagree": 0,
+    "note": "col 7: Peterson o; the image looks more like v; this stretch of 7b (rows 16-21) is unusual (many t, e, y)"
+   },
+   {
+    "side": "8b",
+    "row": 23,
+    "cols": "9-18",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0
+   },
+   {
+    "side": "9a",
+    "row": 1,
+    "cols": "35-44",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0,
+    "note": "c h partly under an ink blot"
+   },
+   {
+    "side": "12b",
+    "row": 19,
+    "cols": "29-38",
+    "agree": 10,
+    "doubtful": 0,
+    "disagree": 0
+   }
+  ],
+  "totals": {
+   "cells": 80,
+   "agree": 78,
+   "doubtful": 2,
+   "disagree": 0
+  }
+ },
+ "advisory_readers": {
+  "note": "Advisory only; see results/advisory_readers.json. Not part of the rerun pipeline.",
+  "qwen2.5vl_32b_local": {
+   "target_row_cells": 198,
+   "matched_peterson": 101,
+   "note": "51 %: too weak on Kelley's secretary hand to arbitrate; run once only"
+  },
+  "claude_opus_5_5_api": {
+   "target_row_cells": 130,
+   "matched_peterson": 96,
+   "answered": "10 of 15 crops; 5 returned an empty answer with stop_reason 'refusal'",
+   "disputed_cases": {
+    "7b r20 empty cell": "reads an empty cell after the 8th letter (agrees with our reading; Peterson's 48 letters right)",
+    "7b r20 row end": "one final a (agrees with Peterson)",
+    "12b r29-33 col 49": "? at the row ends (a lacuna; agrees)",
+    "8b r4-8 last column": "reads no empty cell at the row ends (does not confirm; advisory)",
+    "9a r15 g": "reads 9 (= g) before 1 2 1 2 3 4 (agrees: the g is there)",
+    "7a r4 and 5b r1": "no answer (refusal)"
+   }
+  }
+ }
+}

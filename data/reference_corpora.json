@@ -1,0 +1,17 @@
+{
+ "what": "Period reference texts (train part), rebuilt locally; not redistributed",
+ "la15": {
+  "source_lines": 880,
+  "train_lines": 803,
+  "heldout_lines": 77,
+  "train_words": 87917,
+  "train_sha256": "b89aeeeb977b82706e5282e71b9d40a5682a6d557d6883dc14f8948e0ae8c575"
+ },
+ "en15": {
+  "source_lines": 6598,
+  "train_lines": 5951,
+  "heldout_lines": 709,
+  "train_words": 471407,
+  "train_sha256": "9a0862a78d11acd1e5c6242a49028312f137bf897ccf84588608f93568248b7f"
+ }
+}

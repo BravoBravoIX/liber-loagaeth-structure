@@ -1,0 +1,70 @@
+{
+ "what": "Run records of the published results, as first made on 19 October 2026 in the author's private working repository (raiven-cipher-hunter). The results files in this repository are those files with the machine- and time-dependent fields (code commit, seconds) moved here, and with text that reproduces the edition left out (see README, Licensing). A rerun of code/run_all.sh writes them byte for byte.",
+ "machine": "Linux, CPU only, nice -n 19, at most 6 processes; Python 3.13.14, numpy 2.5.4",
+ "seed": 20261019,
+ "preregistration": {
+  "file": "results/preregistration.md",
+  "commit": "71277239d82f7587deabff23314fd0928d5d6541",
+  "committed": "2026-10-19T11:35:41Z",
+  "sha256": "de11749120970fbc6c7ea6b3bcaeae382231f777e41306a57c5625e67092c2de",
+  "note": "the file is unchanged since that commit"
+ },
+ "l3_code": {
+  "commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+  "committed": "2026-10-19T11:39:48Z",
+  "note": "written after the pre-registration; run once with 20 controls as a smoke test before the full runs, with no parameter changed after it. l3_q3c.json recorded the pre-registration commit as its code commit: that run finished before the code was committed; the code differed only by lint fixes."
+ },
+ "l3_results_commit": {
+  "commit": "4ce54514ebd864b5cc164288375ab6b4cb15dc46",
+  "committed": "2026-10-19T13:14:46Z"
+ },
+ "runs": {
+  "data/corpus_manifest.json": {
+   "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70"
+  },
+  "data/calls_manifest.json": {
+   "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70"
+  },
+  "results/zubair_repro.json": {
+   "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70"
+  },
+  "results/witness_compare.json": {
+   "code_commit": "ae5d6989bc57b4430af29ce3fc66d0d3c96e2b70"
+  },
+  "results/l3_q1.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 15.4
+  },
+  "results/l3_q2rep.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 5156.8
+  },
+  "results/l3_q2pair.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 1.8
+  },
+  "results/l3_q3a.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 243.6
+  },
+  "results/l3_q3b.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 84.8
+  },
+  "results/l3_q3c.json": {
+   "code_commit": "71277239d82f7587deabff23314fd0928d5d6541",
+   "seconds": 13.2
+  },
+  "results/l3_q4.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 103.0
+  },
+  "results/l3_q5.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb",
+   "seconds": 211.9
+  },
+  "results/l3_summary.json": {
+   "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb"
+  }
+ }
+}

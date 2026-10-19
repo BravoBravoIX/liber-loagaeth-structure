@@ -1,0 +1,57 @@
+{
+ "test_group": "q4",
+ "prereg_commit": "7127723",
+ "seed": 20261019,
+ "controls": 10000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "P4a": {
+  "statistic": "Calls word types (4+ letters) found as strings within rows of G",
+  "types": 578,
+  "observed": 50,
+  "p_one_sided": 0.9248075192480751,
+  "controls_pseudowords": {
+   "mean": 58.353,
+   "sd": 6.158294487924396,
+   "q025": 46.0,
+   "q975": 71.0,
+   "max": 81.0,
+   "min": 36.0
+  },
+  "in_C_observed": 34,
+  "in_C_controls": {
+   "mean": 32.9627,
+   "sd": 5.072761448166077,
+   "q025": 23.0,
+   "q975": 43.0,
+   "max": 52.0,
+   "min": 14.0
+  },
+  "in_C_p": 0.44585541445855414
+ },
+ "P4b": {
+  "statistic": "Delta = H(letter-shuffled X) - H(X) under a trigram model of G, bits per letter; X = Calls",
+  "H_calls": 4.272548633747993,
+  "delta_calls": 0.49911664598594463,
+  "p_vs_calls_shuffles": 9.999000099990002e-05,
+  "delta_latin": {
+   "mean": 0.47142614112712056,
+   "sd": 0.03630242851108988,
+   "q025": 0.3933040907666515,
+   "q975": 0.5441459298777026,
+   "max": 0.57870268954483,
+   "min": 0.3449459728146316
+  },
+  "delta_english": {
+   "mean": 0.46296561269985487,
+   "sd": 0.03773062135591942,
+   "q025": 0.3836833994533647,
+   "q975": 0.5447328652310369,
+   "max": 0.5981116927206864,
+   "min": 0.3238736968544895
+  },
+  "p_one_sided": 0.1839080459770115,
+  "calls_letters": 4402
+ }
+}

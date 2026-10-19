@@ -1,0 +1,899 @@
+{
+ "what": "Advisory readings of 15 page-image crops of Sloane MS 3189 by two vision models (L0). Advisory only: they do not change the corpus. Summary of the recorded runs of 19 October 2026; the per-cell readings are left out because they reproduce the edition's text, and the image crops are not included. Not part of the rerun pipeline.",
+ "crops": "15 crops (7 around disputed cells, 8 around the random sample segments) placed with data/image_grid_boxes.json; each covers the target row and up to two rows above and below; 'cells' counts the cells of the edition in that window and 'matched' those the model's line agrees with after alignment; target_row_cells and target_row_cells_matched count the target rows only",
+ "readers": {
+  "qwen2.5vl_32b_local": {
+   "model": "qwen2.5vl:32b",
+   "where_run": "locally (Ollama), temperature 0, seed 20261019",
+   "prompt": "This image is a crop from a 16th-century manuscript table written in English secretary hand. Each small square cell holds one letter (a few cells hold a digit or a capital). Transcribe every line of the table that is visible, from top to bottom. Output one line of text per table row, with the letters separated by single spaces, in lower case. Write ? for a letter you cannot read and _ for an empty cell. Secretary-hand forms: c looks like a modern r; r often looks like x or z; e can look like a reversed 3 or a Greek epsilon; h has a long tail below the line; g can look like y. Output only the transcription.",
+   "corpus_sha256": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18",
+   "target_row_cells": 198,
+   "target_row_cells_matched": 101,
+   "agreement_with_peterson": 0.51010101010101,
+   "items": [
+    {
+     "side": "7a",
+     "row": 4,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: last cell d (Peterson) or dd (lorselq)",
+     "crop_sha256": "c922f80028bf09261f8898b0a165b82d64ee52068ca68decdb45bf5f6695405a",
+     "rows": {
+      "2": {
+       "matched": 5,
+       "cells": 12
+      },
+      "3": {
+       "matched": 9,
+       "cells": 12
+      },
+      "4": {
+       "matched": 8,
+       "cells": 12
+      },
+      "5": {
+       "matched": 6,
+       "cells": 12
+      },
+      "6": {
+       "matched": 7,
+       "cells": 12
+      }
+     }
+    },
+    {
+     "side": "7b",
+     "row": 20,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "disputed: 48 or 49 cells; an empty cell after col 8?",
+     "crop_sha256": "08ee698cc47fbeb0377b0c937f2f159d29d505a5ffbc74941333fc60da440ef3",
+     "rows": {
+      "18": {
+       "matched": 6,
+       "cells": 14
+      },
+      "19": {
+       "matched": 7,
+       "cells": 14
+      },
+      "20": {
+       "matched": 8,
+       "cells": 14
+      },
+      "21": {
+       "matched": 7,
+       "cells": 14
+      },
+      "22": {
+       "matched": 7,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "7b",
+     "row": 20,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: row end, one a or two",
+     "crop_sha256": "04345337e671013124bd106fd4b4ec80cf6d24ab533073251f4ae0a598843e54",
+     "rows": {
+      "18": {
+       "matched": 7,
+       "cells": 12
+      },
+      "19": {
+       "matched": 4,
+       "cells": 12
+      },
+      "20": {
+       "matched": 7,
+       "cells": 11
+      },
+      "21": {
+       "matched": 7,
+       "cells": 12
+      },
+      "22": {
+       "matched": 7,
+       "cells": 12
+      }
+     }
+    },
+    {
+     "side": "12b",
+     "row": 31,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: lacuna at col 49, rows 29-33",
+     "crop_sha256": "b26b890bd982e89bfa975edbc10235982885e02eef7e994a340dcd37b12d7c9c",
+     "rows": {
+      "29": {
+       "matched": 4,
+       "cells": 12
+      },
+      "30": {
+       "matched": 5,
+       "cells": 11
+      },
+      "31": {
+       "matched": 5,
+       "cells": 11
+      },
+      "32": {
+       "matched": 6,
+       "cells": 11
+      },
+      "33": {
+       "matched": 5,
+       "cells": 11
+      }
+     }
+    },
+    {
+     "side": "8b",
+     "row": 6,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: empty last column, rows 4-8",
+     "crop_sha256": "5500430ca5beb33cbb31419f9b6003fd971a9b13a4ce806e9d1e45c6b5d6dee6",
+     "rows": {
+      "4": {
+       "matched": 5,
+       "cells": 12
+      },
+      "5": {
+       "matched": 4,
+       "cells": 11
+      },
+      "6": {
+       "matched": 5,
+       "cells": 11
+      },
+      "7": {
+       "matched": 8,
+       "cells": 11
+      },
+      "8": {
+       "matched": 10,
+       "cells": 11
+      }
+     }
+    },
+    {
+     "side": "9a",
+     "row": 15,
+     "cols": [
+      18,
+      30
+     ],
+     "purpose": "disputed: the g before the numbers",
+     "crop_sha256": "d374d4d4d3ba458ea51d4152d21e5bcc298f414732166cb0add7a8233ac86922",
+     "rows": {
+      "13": {
+       "matched": 6,
+       "cells": 13
+      },
+      "14": {
+       "matched": 5,
+       "cells": 13
+      },
+      "15": {
+       "matched": 10,
+       "cells": 13
+      },
+      "16": {
+       "matched": 7,
+       "cells": 13
+      },
+      "17": {
+       "matched": 8,
+       "cells": 13
+      }
+     }
+    },
+    {
+     "side": "5b",
+     "row": 1,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "disputed: Peterson 5b against lorselq 5b (= 4b)",
+     "crop_sha256": "ac04f6655660a8780f5726296619408ac8fd15e00a36cb13bb6d1f3c98214c75",
+     "rows": {
+      "1": {
+       "matched": 12,
+       "cells": 14
+      },
+      "2": {
+       "matched": 9,
+       "cells": 14
+      },
+      "3": {
+       "matched": 9,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "2a",
+     "row": 38,
+     "cols": [
+      19,
+      32
+     ],
+     "purpose": "sample",
+     "crop_sha256": "3b503f43e17c95be7c0fd074962018fef6cc9ac03a0c2b831b3254fa8147b5a3",
+     "rows": {
+      "36": {
+       "matched": 8,
+       "cells": 14
+      },
+      "37": {
+       "matched": 5,
+       "cells": 14
+      },
+      "38": {
+       "matched": 11,
+       "cells": 14
+      },
+      "39": {
+       "matched": 9,
+       "cells": 14
+      },
+      "40": {
+       "matched": 7,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "3b",
+     "row": 47,
+     "cols": [
+      6,
+      19
+     ],
+     "purpose": "sample",
+     "crop_sha256": "9ba803a71bbe7940be9362289bfa6ce939b6e1f71b1bd01837deebc3078a1a16",
+     "rows": {
+      "45": {
+       "matched": 0,
+       "cells": 14
+      },
+      "46": {
+       "matched": 0,
+       "cells": 14
+      },
+      "47": {
+       "matched": 0,
+       "cells": 14
+      },
+      "48": {
+       "matched": 0,
+       "cells": 14
+      },
+      "49": {
+       "matched": 0,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "5b",
+     "row": 14,
+     "cols": [
+      29,
+      42
+     ],
+     "purpose": "sample (doubtful col 36)",
+     "crop_sha256": "240e2e7fa07f22ca793eb94b0868eb53e3fdc1bb17bf9205e6b6e1dffa758d55",
+     "rows": {
+      "12": {
+       "matched": 5,
+       "cells": 14
+      },
+      "13": {
+       "matched": 3,
+       "cells": 14
+      },
+      "14": {
+       "matched": 2,
+       "cells": 14
+      },
+      "15": {
+       "matched": 3,
+       "cells": 14
+      },
+      "16": {
+       "matched": 3,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "7a",
+     "row": 35,
+     "cols": [
+      17,
+      30
+     ],
+     "purpose": "sample",
+     "crop_sha256": "7f0fdf528b432c923a74cc9552af36a30fa6dd62aca18642b2a3b9231f17bfc8",
+     "rows": {
+      "33": {
+       "matched": 4,
+       "cells": 14
+      },
+      "34": {
+       "matched": 6,
+       "cells": 14
+      },
+      "35": {
+       "matched": 5,
+       "cells": 14
+      },
+      "36": {
+       "matched": 8,
+       "cells": 14
+      },
+      "37": {
+       "matched": 6,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "7b",
+     "row": 18,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "sample (doubtful col 7)",
+     "crop_sha256": "39122095bd938b723e461b5cbe7d130637de545c1743964758e2339265025603",
+     "rows": {
+      "16": {
+       "matched": 3,
+       "cells": 14
+      },
+      "17": {
+       "matched": 8,
+       "cells": 14
+      },
+      "18": {
+       "matched": 8,
+       "cells": 14
+      },
+      "19": {
+       "matched": 8,
+       "cells": 14
+      },
+      "20": {
+       "matched": 6,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "8b",
+     "row": 23,
+     "cols": [
+      7,
+      20
+     ],
+     "purpose": "sample",
+     "crop_sha256": "ea5d363e3a1ae69db0f6f0ec2a6d3fe6ee7d93c7ed7f854539e3da809a3c3e40",
+     "rows": {
+      "21": {
+       "matched": 9,
+       "cells": 14
+      },
+      "22": {
+       "matched": 9,
+       "cells": 14
+      },
+      "23": {
+       "matched": 10,
+       "cells": 14
+      },
+      "24": {
+       "matched": 9,
+       "cells": 14
+      },
+      "25": {
+       "matched": 9,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "9a",
+     "row": 1,
+     "cols": [
+      33,
+      46
+     ],
+     "purpose": "sample",
+     "crop_sha256": "df38a4c796ecc0d94047c7d0610dc959868ea796162acfc2a1db40c4b6f6f42f",
+     "rows": {
+      "1": {
+       "matched": 9,
+       "cells": 14
+      },
+      "2": {
+       "matched": 8,
+       "cells": 14
+      },
+      "3": {
+       "matched": 11,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "12b",
+     "row": 19,
+     "cols": [
+      27,
+      40
+     ],
+     "purpose": "sample",
+     "crop_sha256": "627d9d44524e49b4898360ee7fcc585780aa353c778c86f4aa3b1a92808ebcb7",
+     "rows": {
+      "17": {
+       "matched": 1,
+       "cells": 14
+      },
+      "18": {
+       "matched": 1,
+       "cells": 14
+      },
+      "19": {
+       "matched": 1,
+       "cells": 14
+      },
+      "20": {
+       "matched": 1,
+       "cells": 14
+      },
+      "21": {
+       "matched": 1,
+       "cells": 14
+      }
+     }
+    }
+   ]
+  },
+  "claude_opus_5_5_api": {
+   "model": "claude-opus-5-5",
+   "where_run": "Anthropic API",
+   "prompt": "This image is a crop from a 16th-century manuscript table written in English secretary hand. Each small square cell holds one letter (a few cells hold a digit or a capital). Transcribe every line of the table that is visible, from top to bottom. Output one line of text per table row, with the letters separated by single spaces, in lower case. Write ? for a letter you cannot read and _ for an empty cell. Secretary-hand forms: c looks like a modern r; r often looks like x or z; e can look like a reversed 3 or a Greek epsilon; h has a long tail below the line; g can look like y. Answer only with JSON of the form {\"lines\": [[\"a\", \"b\", ...], ...]}: one list per table row, top to bottom, one single-character string per cell (\"?\" unreadable, \"_\" empty).",
+   "prompt_sha256": "1cabf1c245600977490cc2000283758744357f309c25699f590486d7b32331fb",
+   "corpus_sha256": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18",
+   "target_row_cells": 130,
+   "target_row_cells_matched": 96,
+   "agreement_with_peterson": 0.7384615384615385,
+   "cost_usd": 0.27914,
+   "items": [
+    {
+     "side": "7a",
+     "row": 4,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: last cell d (Peterson) or dd (lorselq)",
+     "crop_sha256": "c922f80028bf09261f8898b0a165b82d64ee52068ca68decdb45bf5f6695405a",
+     "stop_reason": "refusal",
+     "answered": false,
+     "rows": {}
+    },
+    {
+     "side": "7b",
+     "row": 20,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "disputed: 48 or 49 cells; an empty cell after col 8?",
+     "crop_sha256": "08ee698cc47fbeb0377b0c937f2f159d29d505a5ffbc74941333fc60da440ef3",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "18": {
+       "matched": 9,
+       "cells": 14
+      },
+      "19": {
+       "matched": 11,
+       "cells": 14
+      },
+      "20": {
+       "matched": 11,
+       "cells": 14
+      },
+      "21": {
+       "matched": 11,
+       "cells": 14
+      },
+      "22": {
+       "matched": 9,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "7b",
+     "row": 20,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: row end, one a or two",
+     "crop_sha256": "04345337e671013124bd106fd4b4ec80cf6d24ab533073251f4ae0a598843e54",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "18": {
+       "matched": 10,
+       "cells": 12
+      },
+      "19": {
+       "matched": 8,
+       "cells": 12
+      },
+      "20": {
+       "matched": 8,
+       "cells": 11
+      },
+      "21": {
+       "matched": 7,
+       "cells": 12
+      },
+      "22": {
+       "matched": 10,
+       "cells": 12
+      }
+     }
+    },
+    {
+     "side": "12b",
+     "row": 31,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: lacuna at col 49, rows 29-33",
+     "crop_sha256": "b26b890bd982e89bfa975edbc10235982885e02eef7e994a340dcd37b12d7c9c",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "29": {
+       "matched": 5,
+       "cells": 12
+      },
+      "30": {
+       "matched": 6,
+       "cells": 11
+      },
+      "31": {
+       "matched": 6,
+       "cells": 11
+      },
+      "32": {
+       "matched": 7,
+       "cells": 11
+      },
+      "33": {
+       "matched": 7,
+       "cells": 11
+      }
+     }
+    },
+    {
+     "side": "8b",
+     "row": 6,
+     "cols": [
+      38,
+      49
+     ],
+     "purpose": "disputed: empty last column, rows 4-8",
+     "crop_sha256": "5500430ca5beb33cbb31419f9b6003fd971a9b13a4ce806e9d1e45c6b5d6dee6",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "4": {
+       "matched": 7,
+       "cells": 12
+      },
+      "5": {
+       "matched": 9,
+       "cells": 11
+      },
+      "6": {
+       "matched": 10,
+       "cells": 11
+      },
+      "7": {
+       "matched": 10,
+       "cells": 11
+      },
+      "8": {
+       "matched": 9,
+       "cells": 11
+      }
+     }
+    },
+    {
+     "side": "9a",
+     "row": 15,
+     "cols": [
+      18,
+      30
+     ],
+     "purpose": "disputed: the g before the numbers",
+     "crop_sha256": "d374d4d4d3ba458ea51d4152d21e5bcc298f414732166cb0add7a8233ac86922",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "13": {
+       "matched": 10,
+       "cells": 13
+      },
+      "14": {
+       "matched": 11,
+       "cells": 13
+      },
+      "15": {
+       "matched": 11,
+       "cells": 13
+      },
+      "16": {
+       "matched": 12,
+       "cells": 13
+      },
+      "17": {
+       "matched": 11,
+       "cells": 13
+      }
+     }
+    },
+    {
+     "side": "5b",
+     "row": 1,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "disputed: Peterson 5b against lorselq 5b (= 4b)",
+     "crop_sha256": "ac04f6655660a8780f5726296619408ac8fd15e00a36cb13bb6d1f3c98214c75",
+     "stop_reason": "refusal",
+     "answered": false,
+     "rows": {}
+    },
+    {
+     "side": "2a",
+     "row": 38,
+     "cols": [
+      19,
+      32
+     ],
+     "purpose": "sample",
+     "crop_sha256": "3b503f43e17c95be7c0fd074962018fef6cc9ac03a0c2b831b3254fa8147b5a3",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "36": {
+       "matched": 7,
+       "cells": 14
+      },
+      "37": {
+       "matched": 10,
+       "cells": 14
+      },
+      "38": {
+       "matched": 9,
+       "cells": 14
+      },
+      "39": {
+       "matched": 11,
+       "cells": 14
+      },
+      "40": {
+       "matched": 13,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "3b",
+     "row": 47,
+     "cols": [
+      6,
+      19
+     ],
+     "purpose": "sample",
+     "crop_sha256": "9ba803a71bbe7940be9362289bfa6ce939b6e1f71b1bd01837deebc3078a1a16",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "45": {
+       "matched": 7,
+       "cells": 14
+      },
+      "46": {
+       "matched": 9,
+       "cells": 14
+      },
+      "47": {
+       "matched": 8,
+       "cells": 14
+      },
+      "48": {
+       "matched": 5,
+       "cells": 14
+      },
+      "49": {
+       "matched": 5,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "5b",
+     "row": 14,
+     "cols": [
+      29,
+      42
+     ],
+     "purpose": "sample (doubtful col 36)",
+     "crop_sha256": "240e2e7fa07f22ca793eb94b0868eb53e3fdc1bb17bf9205e6b6e1dffa758d55",
+     "stop_reason": "refusal",
+     "answered": false,
+     "rows": {}
+    },
+    {
+     "side": "7a",
+     "row": 35,
+     "cols": [
+      17,
+      30
+     ],
+     "purpose": "sample",
+     "crop_sha256": "7f0fdf528b432c923a74cc9552af36a30fa6dd62aca18642b2a3b9231f17bfc8",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "33": {
+       "matched": 5,
+       "cells": 14
+      },
+      "34": {
+       "matched": 8,
+       "cells": 14
+      },
+      "35": {
+       "matched": 11,
+       "cells": 14
+      },
+      "36": {
+       "matched": 12,
+       "cells": 14
+      },
+      "37": {
+       "matched": 9,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "7b",
+     "row": 18,
+     "cols": [
+      1,
+      14
+     ],
+     "purpose": "sample (doubtful col 7)",
+     "crop_sha256": "39122095bd938b723e461b5cbe7d130637de545c1743964758e2339265025603",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "16": {
+       "matched": 12,
+       "cells": 14
+      },
+      "17": {
+       "matched": 11,
+       "cells": 14
+      },
+      "18": {
+       "matched": 11,
+       "cells": 14
+      },
+      "19": {
+       "matched": 11,
+       "cells": 14
+      },
+      "20": {
+       "matched": 10,
+       "cells": 14
+      }
+     }
+    },
+    {
+     "side": "8b",
+     "row": 23,
+     "cols": [
+      7,
+      20
+     ],
+     "purpose": "sample",
+     "crop_sha256": "ea5d363e3a1ae69db0f6f0ec2a6d3fe6ee7d93c7ed7f854539e3da809a3c3e40",
+     "stop_reason": "refusal",
+     "answered": false,
+     "rows": {}
+    },
+    {
+     "side": "9a",
+     "row": 1,
+     "cols": [
+      33,
+      46
+     ],
+     "purpose": "sample",
+     "crop_sha256": "df38a4c796ecc0d94047c7d0610dc959868ea796162acfc2a1db40c4b6f6f42f",
+     "stop_reason": "refusal",
+     "answered": false,
+     "rows": {}
+    },
+    {
+     "side": "12b",
+     "row": 19,
+     "cols": [
+      27,
+      40
+     ],
+     "purpose": "sample",
+     "crop_sha256": "627d9d44524e49b4898360ee7fcc585780aa353c778c86f4aa3b1a92808ebcb7",
+     "stop_reason": "end_turn",
+     "answered": true,
+     "rows": {
+      "17": {
+       "matched": 8,
+       "cells": 14
+      },
+      "18": {
+       "matched": 8,
+       "cells": 14
+      },
+      "19": {
+       "matched": 11,
+       "cells": 14
+      },
+      "20": {
+       "matched": 8,
+       "cells": 14
+      },
+      "21": {
+       "matched": 12,
+       "cells": 14
+      }
+     }
+    }
+   ]
+  }
+ }
+}

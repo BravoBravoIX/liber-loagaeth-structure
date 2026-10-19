@@ -1,0 +1,28 @@
+{
+ "what": "48 Calls from Casaubon 1659 (EEBO-TCP A37412, CC0): dictation-table word rows",
+ "input_sha256": "c81b3c6fa9babd6289374b64756baa59083bbde703973271d94622bc54824410",
+ "output_sha256": "52d5340b420b2fbefee38d51eadf8ad10f4df76006aa6bd71d2084d74814866e",
+ "word_rows": 838,
+ "how": {
+  "inferred": 99,
+  "inferred_reversed": 77,
+  "printed_reversed": 150,
+  "printed": 512
+ },
+ "letters": 4402,
+ "word_types": 649,
+ "rows_by_heading": {
+  "Tuesday morning, Anno 1584. Aprilis 10. stilo novo Gregorian": 3,
+  "Saturday, Aprilis 14. Mane. Cracoviae, 1584.": 62,
+  "Wensday, Cracoviae, Aprilis 25, Mane, hora 7.": 78,
+  "Wensday morning, Aprilis 1584. Cracoviae. Jesus —": 52,
+  "Saturday, 28. Aprilis, Mane hora 8. Cracoviae. Oratione prae": 45,
+  "Saturday, 14 Maii, Mane hora 6 Fere. † Cracoviae.": 363,
+  "Eadem die 〈◊〉 , hora 7 (inchoante) in meridie. Hora planetar": 36,
+  "28": 38,
+  "30 The twelfth of the 12. 4632.": 7,
+  "Thursday, Julii 12. à 〈◊◊〉 4. † Cracoviae.": 34,
+  "Liber 5. Cracoviensium Mysteriorum Apertorius. Thursday, Jul": 50,
+  "Fryday, Julii 13. Mane hora 7. † Cracoviae.": 70
+ }
+}
