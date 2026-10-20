@@ -66,5 +66,66 @@
   "results/l3_summary.json": {
    "code_commit": "73849f8d66e49aa492b6774c99505186e7cf30bb"
   }
+ },
+ "weave_v1.1": {
+  "note": "the weave study of 25b-28b, added in version 1.1; first made on 20 October 2026 in the same private working repository, with Python 3.12.3 and numpy 2.2.6, one process under nice -n 19",
+  "preregistration": {
+   "file": "results/weave_preregistration.md",
+   "commit": "26f8bbb7c08a8618ea7446a070d49ad7b63174ff",
+   "committed": "2026-10-20T03:01:02Z",
+   "sha256": "d6564f827ebd1e9b7fed723d7b2a96056aaa05163f344ebb91d581c1ce2b1d2f",
+   "note": "the file is unchanged since that commit"
+  },
+  "code": {
+   "commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+   "committed": "2026-10-20T03:02:59Z",
+   "note": "weave.py; smoke-run with 20 controls, then run once in full. summary.py and explore.py (here weave_summary.py, weave_explore.py) were committed with the results; weave_explore.json records 50421bf as its code commit"
+  },
+  "results_commit": {
+   "commit": "43ca7798e2a934480663eedd654d5c3b71ae2a98",
+   "committed": "2026-10-20T03:08:26Z"
+  },
+  "runs": {
+   "results/weave_h1.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 36.5
+   },
+   "results/weave_h2.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 19.7
+   },
+   "results/weave_c1.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 0.9
+   },
+   "results/weave_s3.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 0.0
+   },
+   "results/weave_h3.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 31.1
+   },
+   "results/weave_h4.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 29.2
+   },
+   "results/weave_s1.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 0.2
+   },
+   "results/weave_s2.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 2.2
+   },
+   "results/weave_explore.json": {
+    "code_commit": "50421bff9ea5fd37be0d04cd8ced95852f4aaed1",
+    "seconds": 62.8
+   },
+   "results/weave_summary.json": {},
+   "results/weave_rows.json": {
+    "note": "descriptive, written for the v1.1 release; not in the original runs"
+   }
+  }
  }
 }

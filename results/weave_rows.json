@@ -1,0 +1,346 @@
+{
+ "descriptive": true,
+ "what": "line lengths of the two chessboard colours read along a diagonal (the same for all four diagonal directions), and the row lengths of 29a-48b",
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "colours": {
+  "A (row + column even)": {
+   "lines": 49,
+   "cells": 1201,
+   "is_1_3_to_49_to_3_1": true,
+   "is_2_4_to_48_48_to_4_2": false
+  },
+  "B (row + column odd)": {
+   "lines": 48,
+   "cells": 1200,
+   "is_1_3_to_49_to_3_1": false,
+   "is_2_4_to_48_48_to_4_2": true
+  }
+ },
+ "tables_exact_odd": 19,
+ "tables_exact_even": 17,
+ "tables": 40,
+ "per_side": {
+  "29a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "29b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "30a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "30b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "31a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "31b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "32a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "32b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "33a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "33b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "34a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "34b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "35a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "35b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "36a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "36b": {
+   "rows": 48,
+   "cells": 1176,
+   "exact_odd": false,
+   "exact_even": false,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 24
+  },
+  "37a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "37b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "38a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "38b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "39a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "39b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "40a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "40b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "41a": {
+   "rows": 48,
+   "cells": 1195,
+   "exact_odd": false,
+   "exact_even": false,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 2
+  },
+  "41b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "42a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "42b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "43a": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "43b": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "44a": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "44b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "45a": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "45b": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "46a": {
+   "rows": 49,
+   "cells": 1199,
+   "exact_odd": false,
+   "exact_even": false,
+   "rows_differing_from_odd": 2,
+   "rows_differing_from_even": null
+  },
+  "46b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "47a": {
+   "rows": 48,
+   "cells": 1199,
+   "exact_odd": false,
+   "exact_even": false,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 1
+  },
+  "47b": {
+   "rows": 48,
+   "cells": 1200,
+   "exact_odd": false,
+   "exact_even": true,
+   "rows_differing_from_odd": null,
+   "rows_differing_from_even": 0
+  },
+  "48a": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  },
+  "48b": {
+   "rows": 49,
+   "cells": 1201,
+   "exact_odd": true,
+   "exact_even": false,
+   "rows_differing_from_odd": 0,
+   "rows_differing_from_even": null
+  }
+ }
+}

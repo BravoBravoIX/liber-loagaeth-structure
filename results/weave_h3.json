@@ -1,0 +1,391 @@
+{
+ "test": "h3",
+ "prereg_commit": "26f8bbb",
+ "seed": [
+  20261019,
+  2
+ ],
+ "controls": 1000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "H3": {
+  "statistic": "distinct 8-grams shared between the 14 series (read by the rule) and the rows of 29a-48b",
+  "observed": 663,
+  "p_one_sided": 0.000999000999000999,
+  "controls": {
+   "mean": 61.301,
+   "sd": 10.240820230821358,
+   "q025": 42.0,
+   "q975": 82.0,
+   "max": 94.0,
+   "min": 34.0
+  },
+  "against_2a-25a": {
+   "observed": 1644,
+   "controls": {
+    "mean": 190.128,
+    "sd": 19.69592891944932,
+    "q025": 152.975,
+    "q975": 232.0,
+    "max": 258.0,
+    "min": 138.0
+   },
+   "p_one_sided": 0.000999000999000999
+  },
+  "rule_paths": {
+   "25b A": [
+    "step+1+1",
+    "/"
+   ],
+   "25b B": [
+    "step-1-1",
+    "~"
+   ],
+   "26a A": [
+    "step+1+1",
+    "0"
+   ],
+   "26a B": [
+    "step-1-1",
+    "~"
+   ],
+   "26b A": [
+    "step+1+1",
+    "/"
+   ],
+   "26b B": [
+    "step-1-1",
+    "~"
+   ],
+   "27a A": [
+    "step+1+1",
+    "0"
+   ],
+   "27a B": [
+    "step-1-1",
+    "~"
+   ],
+   "27b A": [
+    "step-1-1",
+    "`"
+   ],
+   "27b B": [
+    "step+1+1",
+    "/"
+   ],
+   "28a A": [
+    "step+1+1",
+    "/"
+   ],
+   "28a B": [
+    "step-1-1",
+    "`"
+   ],
+   "28b A": [
+    "step+1+1",
+    "/"
+   ],
+   "28b B": [
+    "step-1-1",
+    "`"
+   ]
+  },
+  "per_series": {
+   "25b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 94,
+    "shared_8grams_2a-25a": 227,
+    "best_tables": [
+     [
+      "30b",
+      23
+     ],
+     [
+      "29b",
+      18
+     ],
+     [
+      "29a",
+      10
+     ]
+    ],
+    "letters": 1201
+   },
+   "25b B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 52,
+    "shared_8grams_2a-25a": 116,
+    "best_tables": [
+     [
+      "30b",
+      10
+     ],
+     [
+      "29a",
+      7
+     ],
+     [
+      "33a",
+      7
+     ]
+    ],
+    "letters": 1200
+   },
+   "26a A": {
+    "path": "step+1+1",
+    "mark": "0",
+    "shared_8grams_29a-48b": 57,
+    "shared_8grams_2a-25a": 155,
+    "best_tables": [
+     [
+      "29a",
+      13
+     ],
+     [
+      "32b",
+      13
+     ],
+     [
+      "31b",
+      9
+     ]
+    ],
+    "letters": 1201
+   },
+   "26a B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 61,
+    "shared_8grams_2a-25a": 137,
+    "best_tables": [
+     [
+      "31b",
+      11
+     ],
+     [
+      "30b",
+      10
+     ],
+     [
+      "31a",
+      9
+     ]
+    ],
+    "letters": 1200
+   },
+   "26b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 81,
+    "shared_8grams_2a-25a": 226,
+    "best_tables": [
+     [
+      "30b",
+      17
+     ],
+     [
+      "31a",
+      16
+     ],
+     [
+      "29a",
+      14
+     ]
+    ],
+    "letters": 1201
+   },
+   "26b B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 0,
+    "shared_8grams_2a-25a": 0,
+    "best_tables": [
+     [
+      "29a",
+      0
+     ],
+     [
+      "29b",
+      0
+     ],
+     [
+      "30a",
+      0
+     ]
+    ],
+    "letters": 1200
+   },
+   "27a A": {
+    "path": "step+1+1",
+    "mark": "0",
+    "shared_8grams_29a-48b": 42,
+    "shared_8grams_2a-25a": 84,
+    "best_tables": [
+     [
+      "37a",
+      8
+     ],
+     [
+      "31b",
+      7
+     ],
+     [
+      "29a",
+      6
+     ]
+    ],
+    "letters": 1201
+   },
+   "27a B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 0,
+    "shared_8grams_2a-25a": 0,
+    "best_tables": [
+     [
+      "29a",
+      0
+     ],
+     [
+      "29b",
+      0
+     ],
+     [
+      "30a",
+      0
+     ]
+    ],
+    "letters": 1200
+   },
+   "27b A": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 93,
+    "shared_8grams_2a-25a": 165,
+    "best_tables": [
+     [
+      "32a",
+      15
+     ],
+     [
+      "30b",
+      13
+     ],
+     [
+      "33a",
+      12
+     ]
+    ],
+    "letters": 1201
+   },
+   "27b B": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 116,
+    "shared_8grams_2a-25a": 237,
+    "best_tables": [
+     [
+      "31a",
+      26
+     ],
+     [
+      "30b",
+      18
+     ],
+     [
+      "29a",
+      15
+     ]
+    ],
+    "letters": 1200
+   },
+   "28a A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 122,
+    "shared_8grams_2a-25a": 259,
+    "best_tables": [
+     [
+      "29a",
+      24
+     ],
+     [
+      "29b",
+      19
+     ],
+     [
+      "31a",
+      17
+     ]
+    ],
+    "letters": 1201
+   },
+   "28a B": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 34,
+    "shared_8grams_2a-25a": 63,
+    "best_tables": [
+     [
+      "30b",
+      7
+     ],
+     [
+      "32a",
+      7
+     ],
+     [
+      "36b",
+      7
+     ]
+    ],
+    "letters": 1200
+   },
+   "28b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 119,
+    "shared_8grams_2a-25a": 276,
+    "best_tables": [
+     [
+      "29b",
+      22
+     ],
+     [
+      "29a",
+      19
+     ],
+     [
+      "30b",
+      18
+     ]
+    ],
+    "letters": 1201
+   },
+   "28b B": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 74,
+    "shared_8grams_2a-25a": 93,
+    "best_tables": [
+     [
+      "31a",
+      11
+     ],
+     [
+      "33a",
+      10
+     ],
+     [
+      "29a",
+      9
+     ]
+    ],
+    "letters": 1200
+   }
+  }
+ }
+}

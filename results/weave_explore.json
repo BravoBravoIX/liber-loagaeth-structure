@@ -1,0 +1,498 @@
+{
+ "exploratory": true,
+ "seed": [
+  20261019,
+  99
+ ],
+ "controls": 1000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "E1": {
+  "single_series_best_bits": {
+   "min": 4.9039376301209705,
+   "mean": 5.109213410117965,
+   "max": 5.280101419458564,
+   "sets": 76
+  }
+ },
+ "E2": {
+  "26b B ~": {
+   "path": "step+1-1",
+   "bits": 3.0549667589422933,
+   "rank": 1,
+   "margin": 2.128758719685579
+  },
+  "27a B ~": {
+   "path": "step+1-1",
+   "bits": 3.0332160261902397,
+   "rank": 1,
+   "margin": 2.133153930967149
+  }
+ },
+ "E3_H3": {
+  "statistic": "distinct 8-grams shared between the 14 series (read by the rule) and the rows of 29a-48b",
+  "observed": 730,
+  "p_one_sided": 0.000999000999000999,
+  "controls": {
+   "mean": 70.879,
+   "sd": 10.48219247104345,
+   "q025": 51.0,
+   "q975": 92.0,
+   "max": 104.0,
+   "min": 36.0
+  },
+  "against_2a-25a": {
+   "observed": 1842,
+   "controls": {
+    "mean": 220.321,
+    "sd": 20.277868699643957,
+    "q025": 184.0,
+    "q975": 260.0,
+    "max": 287.0,
+    "min": 161.0
+   },
+   "p_one_sided": 0.000999000999000999
+  },
+  "rule_paths": {
+   "25b A": [
+    "step+1+1",
+    "/"
+   ],
+   "25b B": [
+    "step-1-1",
+    "~"
+   ],
+   "26a A": [
+    "step+1+1",
+    "0"
+   ],
+   "26a B": [
+    "step-1-1",
+    "~"
+   ],
+   "26b A": [
+    "step+1+1",
+    "/"
+   ],
+   "26b B": [
+    "step+1-1",
+    "~ (down-left)"
+   ],
+   "27a A": [
+    "step+1+1",
+    "0"
+   ],
+   "27a B": [
+    "step+1-1",
+    "~ (down-left)"
+   ],
+   "27b A": [
+    "step-1-1",
+    "`"
+   ],
+   "27b B": [
+    "step+1+1",
+    "/"
+   ],
+   "28a A": [
+    "step+1+1",
+    "/"
+   ],
+   "28a B": [
+    "step-1-1",
+    "`"
+   ],
+   "28b A": [
+    "step+1+1",
+    "/"
+   ],
+   "28b B": [
+    "step-1-1",
+    "`"
+   ]
+  },
+  "per_series": {
+   "25b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 94,
+    "shared_8grams_2a-25a": 227,
+    "best_tables": [
+     [
+      "30b",
+      23
+     ],
+     [
+      "29b",
+      18
+     ],
+     [
+      "29a",
+      10
+     ]
+    ],
+    "letters": 1201
+   },
+   "25b B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 52,
+    "shared_8grams_2a-25a": 116,
+    "best_tables": [
+     [
+      "30b",
+      10
+     ],
+     [
+      "29a",
+      7
+     ],
+     [
+      "33a",
+      7
+     ]
+    ],
+    "letters": 1200
+   },
+   "26a A": {
+    "path": "step+1+1",
+    "mark": "0",
+    "shared_8grams_29a-48b": 57,
+    "shared_8grams_2a-25a": 155,
+    "best_tables": [
+     [
+      "29a",
+      13
+     ],
+     [
+      "32b",
+      13
+     ],
+     [
+      "31b",
+      9
+     ]
+    ],
+    "letters": 1201
+   },
+   "26a B": {
+    "path": "step-1-1",
+    "mark": "~",
+    "shared_8grams_29a-48b": 61,
+    "shared_8grams_2a-25a": 137,
+    "best_tables": [
+     [
+      "31b",
+      11
+     ],
+     [
+      "30b",
+      10
+     ],
+     [
+      "31a",
+      9
+     ]
+    ],
+    "letters": 1200
+   },
+   "26b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 81,
+    "shared_8grams_2a-25a": 226,
+    "best_tables": [
+     [
+      "30b",
+      17
+     ],
+     [
+      "31a",
+      16
+     ],
+     [
+      "29a",
+      14
+     ]
+    ],
+    "letters": 1201
+   },
+   "26b B": {
+    "path": "step+1-1",
+    "mark": "~ (down-left)",
+    "shared_8grams_29a-48b": 50,
+    "shared_8grams_2a-25a": 122,
+    "best_tables": [
+     [
+      "33a",
+      8
+     ],
+     [
+      "31b",
+      7
+     ],
+     [
+      "30b",
+      6
+     ]
+    ],
+    "letters": 1200
+   },
+   "27a A": {
+    "path": "step+1+1",
+    "mark": "0",
+    "shared_8grams_29a-48b": 42,
+    "shared_8grams_2a-25a": 84,
+    "best_tables": [
+     [
+      "37a",
+      8
+     ],
+     [
+      "31b",
+      7
+     ],
+     [
+      "29a",
+      6
+     ]
+    ],
+    "letters": 1201
+   },
+   "27a B": {
+    "path": "step+1-1",
+    "mark": "~ (down-left)",
+    "shared_8grams_29a-48b": 60,
+    "shared_8grams_2a-25a": 136,
+    "best_tables": [
+     [
+      "31b",
+      9
+     ],
+     [
+      "32a",
+      8
+     ],
+     [
+      "36b",
+      7
+     ]
+    ],
+    "letters": 1200
+   },
+   "27b A": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 93,
+    "shared_8grams_2a-25a": 165,
+    "best_tables": [
+     [
+      "32a",
+      15
+     ],
+     [
+      "30b",
+      13
+     ],
+     [
+      "33a",
+      12
+     ]
+    ],
+    "letters": 1201
+   },
+   "27b B": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 116,
+    "shared_8grams_2a-25a": 237,
+    "best_tables": [
+     [
+      "31a",
+      26
+     ],
+     [
+      "30b",
+      18
+     ],
+     [
+      "29a",
+      15
+     ]
+    ],
+    "letters": 1200
+   },
+   "28a A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 122,
+    "shared_8grams_2a-25a": 259,
+    "best_tables": [
+     [
+      "29a",
+      24
+     ],
+     [
+      "29b",
+      19
+     ],
+     [
+      "31a",
+      17
+     ]
+    ],
+    "letters": 1201
+   },
+   "28a B": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 34,
+    "shared_8grams_2a-25a": 63,
+    "best_tables": [
+     [
+      "30b",
+      7
+     ],
+     [
+      "32a",
+      7
+     ],
+     [
+      "36b",
+      7
+     ]
+    ],
+    "letters": 1200
+   },
+   "28b A": {
+    "path": "step+1+1",
+    "mark": "/",
+    "shared_8grams_29a-48b": 119,
+    "shared_8grams_2a-25a": 276,
+    "best_tables": [
+     [
+      "29b",
+      22
+     ],
+     [
+      "29a",
+      19
+     ],
+     [
+      "30b",
+      18
+     ]
+    ],
+    "letters": 1201
+   },
+   "28b B": {
+    "path": "step-1-1",
+    "mark": "`",
+    "shared_8grams_29a-48b": 74,
+    "shared_8grams_2a-25a": 93,
+    "best_tables": [
+     [
+      "31a",
+      11
+     ],
+     [
+      "33a",
+      10
+     ],
+     [
+      "29a",
+      9
+     ]
+    ],
+    "letters": 1200
+   }
+  }
+ },
+ "E3_H4": {
+  "statistic": "distinct 8-grams shared between series A and B of the same side, summed over 7 sides",
+  "observed": 56,
+  "p_one_sided": 0.000999000999000999,
+  "controls": {
+   "mean": 3.229,
+   "sd": 2.1143696460174604,
+   "q025": 0.0,
+   "q975": 8.0,
+   "max": 12.0,
+   "min": 0.0
+  },
+  "mirror_B_reversed": {
+   "observed": 0,
+   "controls": {
+    "mean": 0.367,
+    "sd": 0.7073266572100898,
+    "q025": 0.0,
+    "q975": 2.0,
+    "max": 5.0,
+    "min": 0.0
+   },
+   "p_one_sided": 1.0
+  },
+  "same_side_per_side": {
+   "25b": 13,
+   "26a": 5,
+   "26b": 6,
+   "27a": 5,
+   "27b": 11,
+   "28a": 11,
+   "28b": 5
+  },
+  "other_side_pairs_mean": 9.928571428571429,
+  "cross_matrix": {
+   "A 25b / B 25b": 13,
+   "A 25b / B 26a": 2,
+   "A 25b / B 26b": 9,
+   "A 25b / B 27a": 7,
+   "A 25b / B 27b": 7,
+   "A 25b / B 28a": 1,
+   "A 25b / B 28b": 5,
+   "A 26a / B 25b": 8,
+   "A 26a / B 26a": 5,
+   "A 26a / B 26b": 1,
+   "A 26a / B 27a": 4,
+   "A 26a / B 27b": 19,
+   "A 26a / B 28a": 3,
+   "A 26a / B 28b": 7,
+   "A 26b / B 25b": 13,
+   "A 26b / B 26a": 15,
+   "A 26b / B 26b": 6,
+   "A 26b / B 27a": 2,
+   "A 26b / B 27b": 19,
+   "A 26b / B 28a": 0,
+   "A 26b / B 28b": 4,
+   "A 27a / B 25b": 7,
+   "A 27a / B 26a": 3,
+   "A 27a / B 26b": 4,
+   "A 27a / B 27a": 5,
+   "A 27a / B 27b": 6,
+   "A 27a / B 28a": 0,
+   "A 27a / B 28b": 0,
+   "A 27b / B 25b": 15,
+   "A 27b / B 26a": 14,
+   "A 27b / B 26b": 9,
+   "A 27b / B 27a": 16,
+   "A 27b / B 27b": 11,
+   "A 27b / B 28a": 12,
+   "A 27b / B 28b": 13,
+   "A 28a / B 25b": 13,
+   "A 28a / B 26a": 9,
+   "A 28a / B 26b": 4,
+   "A 28a / B 27a": 13,
+   "A 28a / B 27b": 47,
+   "A 28a / B 28a": 11,
+   "A 28a / B 28b": 15,
+   "A 28b / B 25b": 18,
+   "A 28b / B 26a": 19,
+   "A 28b / B 26b": 9,
+   "A 28b / B 27a": 3,
+   "A 28b / B 27b": 40,
+   "A 28b / B 28a": 2,
+   "A 28b / B 28b": 5
+  }
+ }
+}

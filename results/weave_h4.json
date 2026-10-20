@@ -1,0 +1,98 @@
+{
+ "test": "h4",
+ "prereg_commit": "26f8bbb",
+ "seed": [
+  20261019,
+  3
+ ],
+ "controls": 1000,
+ "inputs": {
+  "cells.jsonl": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18"
+ },
+ "H4": {
+  "statistic": "distinct 8-grams shared between series A and B of the same side, summed over 7 sides",
+  "observed": 45,
+  "p_one_sided": 0.000999000999000999,
+  "controls": {
+   "mean": 2.438,
+   "sd": 1.9411738716560143,
+   "q025": 0.0,
+   "q975": 7.0,
+   "max": 11.0,
+   "min": 0.0
+  },
+  "mirror_B_reversed": {
+   "observed": 0,
+   "controls": {
+    "mean": 0.223,
+    "sd": 0.5415450119796137,
+    "q025": 0.0,
+    "q975": 2.0,
+    "max": 5.0,
+    "min": 0.0
+   },
+   "p_one_sided": 1.0
+  },
+  "same_side_per_side": {
+   "25b": 13,
+   "26a": 5,
+   "26b": 0,
+   "27a": 0,
+   "27b": 11,
+   "28a": 11,
+   "28b": 5
+  },
+  "other_side_pairs_mean": 8.0,
+  "cross_matrix": {
+   "A 25b / B 25b": 13,
+   "A 25b / B 26a": 2,
+   "A 25b / B 26b": 0,
+   "A 25b / B 27a": 0,
+   "A 25b / B 27b": 7,
+   "A 25b / B 28a": 1,
+   "A 25b / B 28b": 5,
+   "A 26a / B 25b": 8,
+   "A 26a / B 26a": 5,
+   "A 26a / B 26b": 0,
+   "A 26a / B 27a": 0,
+   "A 26a / B 27b": 19,
+   "A 26a / B 28a": 3,
+   "A 26a / B 28b": 7,
+   "A 26b / B 25b": 13,
+   "A 26b / B 26a": 15,
+   "A 26b / B 26b": 0,
+   "A 26b / B 27a": 0,
+   "A 26b / B 27b": 19,
+   "A 26b / B 28a": 0,
+   "A 26b / B 28b": 4,
+   "A 27a / B 25b": 7,
+   "A 27a / B 26a": 3,
+   "A 27a / B 26b": 0,
+   "A 27a / B 27a": 0,
+   "A 27a / B 27b": 6,
+   "A 27a / B 28a": 0,
+   "A 27a / B 28b": 0,
+   "A 27b / B 25b": 15,
+   "A 27b / B 26a": 14,
+   "A 27b / B 26b": 0,
+   "A 27b / B 27a": 0,
+   "A 27b / B 27b": 11,
+   "A 27b / B 28a": 12,
+   "A 27b / B 28b": 13,
+   "A 28a / B 25b": 13,
+   "A 28a / B 26a": 9,
+   "A 28a / B 26b": 0,
+   "A 28a / B 27a": 0,
+   "A 28a / B 27b": 47,
+   "A 28a / B 28a": 11,
+   "A 28a / B 28b": 15,
+   "A 28b / B 25b": 18,
+   "A 28b / B 26a": 19,
+   "A 28b / B 26b": 0,
+   "A 28b / B 27a": 0,
+   "A 28b / B 27b": 40,
+   "A 28b / B 28a": 2,
+   "A 28b / B 28b": 5
+  }
+ }
+}

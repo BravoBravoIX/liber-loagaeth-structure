@@ -14,6 +14,8 @@ in pairs; and whether the tables share anything with the 48 Calls that Dee and K
 the next year. It first builds a checked, cell-by-cell corpus, reproduces and corrects the one
 earlier computational study (Zubair 2026), and then runs ten tests written down and committed
 before any of them was scored, each against 10,000 controls, with Holm's correction.
+Version 1.1 adds a second, separately pre-registered study of how the two letter series of
+pages 25b–28b are laid into the grid (section 4, "Pages 25b–28b").
 
 This is a structural study, not a decipherment. Nothing here is a reading or a translation, and
 no grid paths are searched for words. Where the evidence is short of proof, this README says
@@ -42,6 +44,8 @@ method, results, discussion and references; built from `paper/liber-loagaeth.typ
 | Are Peterson's word marks on 2a–3b meaningful? | They depend on the letters around them, and the "words" are long | Mutual information 0.207 bits against 0.031 for random placement (Holm p 0.001); 8.8 letters a word against 5.3 in the Calls |
 | Are the 48 Calls drawn from the tables? | The evidence weighs against it | Calls words occur in the rows no more often than pseudo-words (50 against 58.4); the Calls' letter order is no closer to the tables' than Latin or English is (Holm p 0.74) |
 | How were the two-series tables 25b–28b written? | As two interleaved series that read as text-like sequences along diagonals and differ in their letters | Holm p 0.001 for both primary tests; diagonal reading secondary (p 0.0005) |
+| By what rule are the two series laid into the grid? (v1.1) | Like a chessboard: one series on the "black" squares, one on the "white", each written one diagonal per line, so its lines are 1, 3 … 49 … 3, 1 or 2, 4 … 48, 48 … 2 letters long, the row lengths of the tables on 29a–48b. The slant of the letters gives the writing direction | Pre-registered, separate Holm family: slant gives direction on 7 of 9 marked series (Holm p 0.0004), and the fitted rule holds on 2 of 3 held-out series (Holm p 0.0004). The two failures are both `~` series (26b, 27a), which read best down-left (exploratory) |
+| Does one series continue or mirror the other? (v1.1) | No sign of it; both draw on the book's common stock of strings | A side's two series share 45 8-letter strings (controls 2.4), but series of different sides share as many (8.0 a pair); none reversed; none copies a 29a–48b table |
 
 ## 1. The problem
 
@@ -108,6 +112,7 @@ with at most six processes.
 | L1 | `code/reproduce_zubair.py` | Zubair's letter counts and IC range, by our corpus and by an emulation of a count of every letter on the page; his Soyga-rule test with 10,000 shuffles of each table and a per-table baseline, Holm over 15 tables |
 | L2 | `results/preregistration.md` | The five questions, ten primary tests (P) and their secondary tests (S), controls, multiple-testing rule and stop rule, committed before scoring |
 | L3 | `code/l3_tests.py`, `code/l3_summary.py` | The pre-registered tests, 10,000 controls each, and Holm's correction over the primary family |
+| W (v1.1) | `results/weave_preregistration.md`, `code/weave.py`, `code/weave_summary.py`, `code/weave_explore.py`, `code/weave_rows.py` | The layout of the two series of 25b–28b: four pre-registered tests (H1–H4) with their own Holm family, controls and checks (C1, S1–S3), exploratory follow-ups (E1–E3) and a descriptive count of row lengths |
 
 **Symbols.** For the statistics each cell is one symbol: its first letter, lower case, accents
 removed, with u, v and w read as one letter and j as i. Digit cells break every string; no
@@ -246,6 +251,109 @@ on 29a–48b holds 1,195–1,201 letters except 36b (1,176), the size of one ser
 like one series written and the other never filled in. The 65 uncertain marks fall on 21 sides
 between 4a and 17b.
 
+### Pages 25b–28b: the two series and how they are laid (v1.1; `results/weave_*.json`)
+
+A second study, pre-registered on its own (`results/weave_preregistration.md`), asks by what rule
+Kelley's two letter series are laid into the 49 × 49 grid of 25b–28b, and what follows from it.
+It is a study of layout, not a reading: no translation, no word search.
+
+**The rule, in plain words.** Peterson's orientation marks follow a chessboard exactly on all
+seven sides: one series sits on every "black" square (row + column even, 1,201 cells) and the
+other on every "white" square (odd, 1,200 cells), with one exception (one `/` on a white square
+of 28a). Each series is written along diagonals, one diagonal per line, with the page turned so
+that the letters slant. On a 49 × 49 chessboard the diagonals of one colour are 1, 3, 5 … 49 … 5,
+3, 1 cells long and those of the other 2, 4 … 48, 48 … 4, 2. These are the row lengths of the
+partly filled tables of 29a–48b: 19 of the 40 have rows of exactly 1, 3 … 49 … 3, 1
+cells and 17 exactly 2, 4 … 48, 48 … 2; of the other four, 41a, 46a and 47a differ from the
+pattern in one or two rows and 36b (1,176 cells) in 24 (`results/weave_rows.json`, a
+descriptive count). So each series is laid out like one of the later
+tables, written on the diagonal; the later tables look like one series written with the other
+never added.
+
+**The slant gives the direction.** Peterson's legend says `/` marks a letter turned 45° clockwise
+and `~` one turned 135° counter-clockwise. Turning the writer's line the same way, `/` letters
+are written down to the right and `~` letters up to the left. `` ` `` has no legend; letters
+without a mark are upright.
+
+**What was tested** (seed 20261019; 20 candidate paths for each set of cells: along rows, columns,
+the four diagonals, eight steeper slopes and four back-and-forth versions). Each path is scored
+by bits per letter pair within lines, under a letter-pair model trained on the rows of 2a–25a;
+lower is more text-like. The controls permute each series' letters within each row
+(10,000 times) or regenerate each series from its own letter pairs (1,000 times).
+
+| Test | Question | Observed | Controls: mean (95 % range) | p | Holm |
+|---|---|---|---|---|---|
+| H1 | the slant mark gives the direction (9 marked series, nothing fitted) | margin 1.69 bits; predicted path first of 20 on 7 of 9 | 0.06 (0.01 to 0.10) | 0.0001 | **0.0004** |
+| H2 | unlegended marks: path fitted on one side, tested on held-out sides (3 series) | margin 1.55 bits; first on 2 of 3 | 0.04 (−0.06 to 0.13) | 0.0001 | **0.0004** |
+| H3 | the series share 8-letter strings with the rows of 29a–48b | 663 | 61 (42 to 82) | 0.001 | **0.002** |
+| H4 | the two series of a side share 8-letter strings | 45 | 2.4 (0 to 7) | 0.001 | **0.002** |
+
+Margin: the mean score of the other 19 paths minus the score of the predicted path, in bits per
+letter pair, averaged over the series. Holm's correction is over these four tests only; with
+1,000 controls the smallest possible p is 0.001.
+
+- **H1, series by series** (`results/weave_h1.json`). The predicted path is first of 20 on 25b A
+  (`/`), 25b B (`~`), 26a B (`~`), 26b A (`/`), 27b B (`/`), 28a A (`/`) and 28b A (`/`), at
+  2.81–3.13 bits per letter pair, against 5.22–5.43 for the same cells read along the rows; it
+  is first by shared 6-letter strings with 2a–25a as well. It fails on the `~` series of 26b and
+  27a (ranks 14 and 6).
+- **The `~` exception (exploratory, after the results were seen;** `results/weave_explore.json`,
+  E2). On 26b B and 27a B the best path runs down to the left, at 3.05 and 3.03 bits, first of 20
+  with margins of 2.13 bits. So in Peterson's marks `~` seems to cover two different turns of the
+  letter: up-left on 25b and 26a, down-left on 26b and 27a. Only the page images could settle
+  this, and none of 25b–48b was checked.
+- **H2** (`results/weave_h2.json`). The `` ` `` letters, fitted on 27b A, run up to the left; held
+  out, that path is first on 28a B and 28b B. Upright letters, fitted on 26a A, run down to the
+  right; held out on 27a A that path is second (4.32 bits), behind reading every other cell along
+  the row (3.92). 27a A is the least text-like series under any path.
+- **Specificity (C1, and E1)** (`results/weave_c1.json`). On the two colours of the 38 full
+  single-series tables 2a–25a (76 sets of cells) no path is text-like: the best scores 4.90–5.28
+  bits. A diagonal path edges out the row on 71 of the 76, but by at most 0.31 bits, against
+  margins of about 2 bits on 25b–28b. The rule belongs to the two-series sides.
+- **Rows 1–5 of 25b (S3).** The 122 unmarked cells of the second series in rows 1–5 read best left
+  to right along the row, as Peterson's note says.
+- **Line order (S1, secondary;** `results/weave_s1.json`**).** The letter pairs that join the end of
+  one line to the start of the next, with the lines in the writer's order, are more text-like
+  than random line orders on 25b A, 25b B, 26a B and 27b B (p 0.006, 0.007, 0.03 and 0.001; none
+  in the reverse order). On those series the text runs on from line to line.
+- **Line ends (S2, secondary and exploratory;** `results/weave_s2.json`**).** Lines end in h, x or
+  s 19 % of the time (14 % inside lines; shuffles 14 %, 95 % up to 16 %; p 0.001) and start in o,
+  v or g 22 % of the time (15 % inside; p 0.001). The pre-registration names h, x and s as the
+  word-final letters of the marked words of 2a–3b; the start letters o, v and g were added in the
+  code and are not in it. There are no word marks on 25b–28b.
+- **H3, the later tables** (`results/weave_h3.json`). The series share 663 distinct 8-letter
+  strings with 29a–48b (controls 61), but also 1,644 with 2a–25a (controls 190). Allowing for the
+  size of each (47,988 cells against 113,240), the rate is about the same, about 14 per 1,000
+  cells. No series copies a later table: the best single table shares 7–26 strings with a
+  series (none for the two `~` series that fail H1), usually one of the first few (29a–33a). With the down-left reading for 26b B and 27a B
+  (exploratory, E3): 730 (controls 71).
+- **H4, the two series of a side** (`results/weave_h4.json`). They share 45 strings (controls
+  2.4), but a series of one side and the other series of a different side share as many: 8.0 a
+  pair on average, about 56 for seven pairs; 28a A and 27b B share 47. The second series reversed
+  shares none with the first. With E3's paths: 56 on the same side, against 9.9 a pair across
+  sides.
+
+**What this implies, and what it does not.** The evidence weighs toward each series being a
+table of the 29a–48b kind written along the diagonals, with the slant of the letters showing the
+writing direction. It does not show that one series continues the other, or mirrors it: the two
+series of a side are no more alike than series of different sides, and both draw on the same
+stock of recurring strings as the rest of the book. Nor do the series copy a later table. "Text-
+like" is a statistic against controls; it does not show a language, and nothing here is a
+reading or a translation.
+
+**Pre-registration and timing.** `results/weave_preregistration.md` is the file committed on
+20 October 2026 at 03:01 UTC as commit `26f8bbb` (full hash
+`26f8bbb7c08a8618ea7446a070d49ad7b63174ff`) of the author's private working repository, before
+any of the weave statistics was scored; it is unchanged here (SHA-256 `d6564f82…ce2b1d2f`), and
+its paths (`../README.md`, `PROGRESS.md`) refer to that repository. It lists what had been looked
+at first: the prior art, which cells carry which marks (the chessboard), and the row lengths of
+29a–48b. The test code was committed two minutes later (`50421bf`), smoke-run with 20 controls
+and then run once in full; the results were committed at 03:08 UTC (`43ca779`). Readers cannot
+check this timing: the working repository is private, and the commits were published here only
+with version 1.1. The exploratory runs (E1–E3) were written after the primary results were seen
+and are labelled so in their file. `results/weave_rows.json` is a descriptive count added for
+this release.
+
 ## 5. Verdict
 
 - **The evidence weighs toward tables built from a recurring stock of word-like strings**, laid
@@ -257,6 +365,10 @@ between 4a and 17b.
 - **The two-series tables 25b–28b were written differently**: as two interleaved series that
   read as text-like sequences along diagonals and differ in their letters. The partly filled
   tables 29a–48b are each the size of one such series.
+- **(v1.1) Each series of 25b–28b is laid like a chessboard colour, one diagonal per line**, so
+  its lines have the row lengths of the tables of 29a–48b, and the slant of the letters gives the
+  writing direction (7 of 9 marked series and 2 of 3 held-out series). The two series of a side
+  do not continue or mirror each other; both draw on the common stock of strings.
 - **No a/b pairing of sides** (against Cocciolilo 2026).
 - **The evidence weighs against the 48 Calls being drawn from the tables' running text.** This
   does not rule out a relation by some other path (directions, skips, grid paths), which was not
@@ -271,7 +383,10 @@ This study stands on the work of others:
 
 - **Joseph H. Peterson** edited Sloane MS 3189 cell by cell, with marks for doubtful letters,
   word ends and letter orientation, and described the two series of 25b–28b as written along
-  diagonals. Every letter here is read from his edition.
+  diagonals. Every letter here is read from his edition. His note on 25b says, in words, that one
+  series runs along alternate diagonals from upper left to lower right with its letters slanted
+  45° clockwise, that the gaps of rows 1–5 are filled left to right, and that another series runs
+  along diagonals from lower right to upper left; his legend explains `/` and `~` (not `` ` ``).
 - **Donald Laycock** (*The Complete Enochian Dictionary*, 1978; revised 1994) compiled the
   vocabulary of the Calls and judged them language-like in syntax, unlike the untranslated
   Loagaeth.
@@ -287,7 +402,11 @@ This study stands on the work of others:
   independent of the tables.
 - **Gary Cocciolilo** (2026; Zenodo 10.5281/zenodo.19914827, 10.5281/zenodo.19917987 and
   10.5281/zenodo.19976902) proposed a staged "table-engine" reading, qualitative and without
-  translation, including a pairing of a- and b-sides.
+  translation, including a pairing of a- and b-sides. He noticed (2026a, §5) that 25b–28b should
+  not be read row by row and that one diagonal stream extracted from 25b grows 1 → 49 → 1 in the
+  shape of the later leaves, and (2026c, §9) that the tables of 29a–42b alternate fields of
+  2 … 48 … 2 and 1 … 49 … 1 cells. He states this qualitatively, without a path rule or a test,
+  and does not claim that 25b generates 29a.
 - **lorselq** (GitHub, enochian_language_modeling) published machine-readable grids of 2a–16b
   with marks for uncertain cells and lacunae, and n-gram experiments; **anasofiadias** (GitHub,
   Loagaeth) published page images of the manuscript and a transcription; **Marco Ponzi** fitted
@@ -316,6 +435,15 @@ What this study adds, as far as our search found (GitHub, Zenodo and the web, 18
    from the rows.
 4. **The partly filled tables 29a–48b are each one series' worth of letters** (about 1,200),
    matching one of the two series on 25b–28b.
+5. **(v1.1) The layout rule of 25b–28b**, stated exactly and tested (search of GitHub, Zenodo
+   and the web, 20 October 2026): each series is one chessboard colour, written one diagonal per
+   line, so that its lines have exactly the row lengths of the 29a–48b tables; the slant mark
+   gives the writing direction, tested before scoring with held-out sides and controls; the `~`
+   mark seems to cover two directions (exploratory); the text runs on from line to line on four
+   series; and the tests of what follows (no copy of a later table, no continuation or mirror
+   between the two series). Peterson's note gives the direction of the 25b series in words, and
+   Cocciolilo saw the 1 → 49 → 1 growth of one stream and the alternating fields of the later
+   tables; what is new is the full mapping for all seven sides and the controlled tests.
 
 ## 7. Caveats and open checks
 
@@ -339,8 +467,17 @@ What this study adds, as far as our search found (GitHub, Zenodo and the web, 18
    one English set (mostly the Paston Letters). They stand for "ordinary text", not for the
    language of the Calls.
 7. **Not searched, by design:** directions other than the written rows, skips, knight's moves or
-   any other grid path, and any translation.
-8. **Open checks:** a full collation with the manuscript images when they are available again;
+   any other grid path, and any translation. The one exception is the weave study (v1.1), which
+   scores 20 fixed paths on 25b–28b (and, as a control, on 2a–25a) for letter-pair statistics
+   only; no path is searched for words.
+8. **(v1.1) The weave study rests on Peterson's marks.** The chessboard, the slant directions and
+   the two kinds of `~` are all read from his edition; no image of 25b–48b was checked, so how
+   the marks look on the page, what `` ` `` means, and how the tables of 29a–48b sit on the page
+   are open. "Direction" means the sense that reads like the left-to-right rows of 2a–25a, since
+   the letter model is trained on them. The weave pre-registration was written after the
+   chessboard and the row lengths had been seen (it says so), and its timing cannot be checked
+   by readers (see "Pages 25b–28b").
+9. **Open checks:** a full collation with the manuscript images when they are available again;
    a second, independent transcription; generation models beyond first-order Markov and copying
    from recent rows.
 
@@ -367,7 +504,14 @@ into `work/` (git-ignored, so a rebuild never republishes them) and rewrites eve
 in `data/` and `results/` byte for byte (checked from a clean fetch and a clean `work/` folder on
 19 October 2026), except the files that record checks outside the pipeline:
 `data/image_checks.json`, `data/image_grid_boxes.json`, `results/advisory_readers.json`,
-`results/run_records.json` and `results/preregistration.md`. The optional witness check reruns
+`results/run_records.json`, `results/preregistration.md` and `results/weave_preregistration.md`.
+The weave files (v1.1) were checked the same way on 20 October 2026, from the fetched edition and
+a freshly rebuilt corpus: the ten `results/weave_*.json` files of the original runs come out
+byte for byte (the code and run-time fields moved to `results/run_records.json`) with
+Python 3.12 and numpy 2.2.6, the versions of the original weave runs, which `run_all.sh` uses for
+those steps (`WPYTHON` overrides it). With numpy 2.5.4 the last digit of the H1 control mean and
+standard deviation (`weave_h1.json`, `weave_summary.json`) changes; nothing else does. The
+optional witness check reruns
 with:
 
 ```
@@ -394,6 +538,9 @@ the original runs are in `results/run_records.json`.
 - **The readings of whole row segments** made on the page images, and the per-cell readings of
   the two model readers: they reproduce the edition's text, so only the counts of agreeing cells
   and short references are kept (`data/image_checks.json`, `results/advisory_readers.json`).
+- **The two series of 25b–28b as read by the layout rule** (v1.1): they are the edition's letters
+  in another order, so they are written only to `work/corpus/weave_series.json`; the results keep
+  counts and scores, and the 8-letter strings counted in H3 and H4 are not listed.
 - **The list of Calls words found in the rows** (P4a): each is also a string of the edition; the
   count is published and the list is written only to `work/`.
 - **The lorselq grids**: no licence; fetched only for the optional check; only counts and two
@@ -445,8 +592,19 @@ the original runs are in `results/run_records.json`.
   *De docta ignorantia*, *De coniecturis*, *Apologia doctae ignorantiae* and *Idiota de mente*;
   Project Gutenberg ebooks 44833, 45027, 40989, 41024, 41081, 42239, 42240, 10672, 17179 and 8102.
 
+## Versions
+
+- **1.1** (20 October 2026): adds the study of how the two series of 25b–28b are laid into the
+  grid (section 4, "Pages 25b–28b"): its pre-registration, code (`code/weave*.py`, added to
+  `code/run_all.sh`), results (`results/weave_*.json`, run records in
+  `results/run_records.json`), and a section and a schematic figure in the paper. No result of
+  version 1.0 is changed; the summary, verdict, credits, caveats and reproduction notes now
+  mention the new study.
+- **1.0** (19 October 2026): the corpus, the reproduction of Zubair (2026) and the ten
+  pre-registered tests.
+
 ## How to cite
 
 Burford, B. (2026). Liber Loagaeth: a pre-registered structural study of the tables (version
-1.0). Zenodo. https://doi.org/10.5281/zenodo.23487865.
+1.1). Zenodo. https://doi.org/10.5281/zenodo.23487865.
 Source: https://github.com/BravoBravoIX/liber-loagaeth-structure
