@@ -19,7 +19,7 @@
   #v(0.2em)
   #text(size: 9pt)[Working paper, version 1.0, 19 October 2026 · not peer reviewed]
   #v(0.2em)
-  #text(size: 9pt)[Code, data and results: #link("https://github.com/BravoBravoIX/liber-loagaeth-structure")[github.com/BravoBravoIX/liber-loagaeth-structure] · Zenodo DOI to be added]
+  #text(size: 9pt)[Code, data and results: #link("https://github.com/BravoBravoIX/liber-loagaeth-structure")[github.com/BravoBravoIX/liber-loagaeth-structure] · doi:10.5281/zenodo.23487865]
 ]
 
 #v(0.8em)

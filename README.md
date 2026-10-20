@@ -1,5 +1,7 @@
 # Liber Loagaeth: a pre-registered structural study of the tables
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23487865.svg)](https://doi.org/10.5281/zenodo.23487865)
+
 *Liber Loagaeth* (British Library, Sloane MS 3189) is the book of letter tables that John Dee
 and Edward Kelley received in their sessions with spirits in 1583; the surviving copy is in
 Kelley's hand. After two leaves of running text it has 94 table sides: 54 full tables of
@@ -20,7 +22,7 @@ no grid paths are searched for words. Where the evidence is short of proof, this
 October 2026. CPU only; Python with numpy. The whole analysis reruns in about an hour and a half,
 almost all of it one test.
 
-**Archived on Zenodo:** doi:10.5281/zenodo.XXXXXXX *(placeholder: the DOI is added when Zenodo
+**Archived on Zenodo:** doi:10.5281/zenodo.23487865 *(placeholder: the DOI is added when Zenodo
 mints it; see How to cite at the end).*
 
 **The paper:** [`paper/liber-loagaeth.pdf`](paper/liber-loagaeth.pdf) (working paper: abstract,
@@ -447,5 +449,5 @@ the original runs are in `results/run_records.json`.
 ## How to cite
 
 Burford, B. (2026). Liber Loagaeth: a pre-registered structural study of the tables (version
-1.0). Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX *(placeholder until Zenodo mints the DOI)*.
+1.0). Zenodo. https://doi.org/10.5281/zenodo.23487865.
 Source: https://github.com/BravoBravoIX/liber-loagaeth-structure
