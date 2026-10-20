@@ -22,8 +22,7 @@ no grid paths are searched for words. Where the evidence is short of proof, this
 October 2026. CPU only; Python with numpy. The whole analysis reruns in about an hour and a half,
 almost all of it one test.
 
-**Archived on Zenodo:** doi:10.5281/zenodo.23487865 *(placeholder: the DOI is added when Zenodo
-mints it; see How to cite at the end).*
+**Archived on Zenodo** with its paper, code, data and results: [doi:10.5281/zenodo.23487865](https://doi.org/10.5281/zenodo.23487865) (this DOI always opens the latest version; see How to cite at the end).
 
 **The paper:** [`paper/liber-loagaeth.pdf`](paper/liber-loagaeth.pdf) (working paper: abstract,
 method, results, discussion and references; built from `paper/liber-loagaeth.typ` by
