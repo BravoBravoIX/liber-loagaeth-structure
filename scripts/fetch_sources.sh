@@ -13,7 +13,15 @@ SUMS="$HERE/sources/SHA256SUMS"
 OUT="$1"
 mkdir -p "$OUT"/peterson "$OUT"/calls "$OUT"/zubair "$OUT"/latin "$OUT"/english
 UA="liber-loagaeth-structure source fetch (one request at a time)"
-get() { [ -s "$2" ] || { curl -fsSL --proto '=https' --retry 3 -A "$UA" -o "$2.part" "$1" && mv "$2.part" "$2"; sleep 1; }; }
+# Returns non-zero if the download fails (an earlier version reported success regardless).
+get() {
+  [ -s "$2" ] && return 0
+  if curl -fsSL --proto '=https' --retry 3 -A "$UA" -o "$2.part" "$1"; then
+    mv "$2.part" "$2"; sleep 1
+  else
+    rm -f "$2.part"; sleep 1; return 1
+  fi
+}
 
 # 1. Joseph H. Peterson, Liber Loagaeth (Sloane MS 3189), Esoteric Archives edition.
 #    (c) Peterson; research use only, never redistributed. The study's copy is identified by its
