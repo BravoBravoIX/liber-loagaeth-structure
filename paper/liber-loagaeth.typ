@@ -17,7 +17,7 @@
   #v(0.2em)
   #text(size: 9pt)[ORCID #link("https://orcid.org/0009-0003-6599-8297")[0009-0003-6599-8297] · Independent researcher, Australia]
   #v(0.2em)
-  #text(size: 9pt)[Working paper, version 1.1, 20 October 2026 (version 1.0, 19 October 2026) · not peer reviewed]
+  #text(size: 9pt)[Working paper, version 1.1.1, 21 October 2026 (version 1.1, 20 October 2026; version 1.0, 19 October 2026) · not peer reviewed]
   #v(0.2em)
   #text(size: 9pt)[Code, data and results: #link("https://github.com/BravoBravoIX/liber-loagaeth-structure")[github.com/BravoBravoIX/liber-loagaeth-structure] · doi:10.5281/zenodo.23487865]
 ]
@@ -46,7 +46,7 @@ This paper asks five questions about how the tables were made, all made checkabl
 
 = Sources and data
 
-The corpus is parsed from Peterson's edition (Esoteric Archives, © 1998, updated 2 February 2023), which is under copyright and is not redistributed; a script fetches it and checks its SHA-256, and the pipeline rebuilds the corpus locally. The 48 Calls come from Casaubon's 1659 _True & Faithful Relation_, in the CC0 keyed text EEBO-TCP A37412: 838 word rows of the dictation tables, 4,402 letters, in forward form. Period reference texts are Latin (Latin Wikisource, CC BY-SA 4.0: Alberti, _De pictura_, 1435, and five works of Nicolaus Cusanus, 1440–1450) and English (Project Gutenberg, public domain: Chaucer's _Boece_ and _Astrolabe_, the Paston Letters, Caxton's _Chesse_, the _Book of Quinte Essence_ and the _Forme of Cury_, c. 1380–1509, in original spelling). Zubair's per-table counts and Soyga-rule table come from his Zenodo record (CC BY 4.0). The lorselq grids (no licence) were used only for a cell-by-cell witness check, and eight folio images from the anasofiadias repository (rights unclear) only for spot checks by eye; neither is redistributed, and neither is needed to rerun the main results. The British Library's own images of the manuscript were unavailable.
+The corpus is parsed from Peterson's edition (Esoteric Archives, © 1998, updated 2 February 2023), which is under copyright and is not redistributed; a script fetches it and checks its SHA-256, and the pipeline rebuilds the corpus locally. The 48 Calls come from Casaubon's 1659 _True & Faithful Relation_, in the CC0 keyed text EEBO-TCP A37412: 838 word rows of the dictation tables, 4,402 letters, in forward form. Period reference texts are Latin (Latin Wikisource, CC BY-SA 4.0: Alberti, _De pictura_, 1435, and five works of Nicolaus Cusanus, 1440–1450) and English (Project Gutenberg, public domain: Chaucer's _Boece_ and _Astrolabe_, the Paston Letters, Caxton's _Chesse_, the _Book of Quinte Essence_ and the _Forme of Cury_, c. 1380–1509, in original spelling). Zubair's per-table counts and Soyga-rule table come from his Zenodo record (CC BY 4.0). The lorselq grids (no licence) were used only for a cell-by-cell witness check, and eight folio images from the anasofiadias repository (rights unclear) only for spot checks by Claude; neither is redistributed, and neither is needed to rerun the main results. The British Library's own images of the manuscript were unavailable.
 
 = Method
 
@@ -61,6 +61,8 @@ Every random process uses the seed 20261019. The tests ran on CPU only, with num
 *The weave study (version 1.1).* A second pre-registration, committed on 20 October 2026 (commit `26f8bbb` of the same working repository, reproduced unchanged), set out four primary tests (H1–H4) with their own Holm family, controls and checks; the test code was committed two minutes later, smoke-run with 20 controls and run once in full. It lists what had been seen first: the prior art, which cells carry which marks, and the row lengths of 29a–48b. Readers cannot check this timing, since the working repository is private. Each set of cells is read along 20 candidate paths (rows, columns, the four diagonals, eight steeper slopes and four back-and-forth versions), and each path is scored in bits per letter pair within lines, under a letter-pair model trained on the rows of 2a–25a; lower is more text-like. Controls permute each series' letters within each row (10,000 times) or regenerate each series from its own letter pairs (1,000 times). Analyses added after the results were seen are labelled exploratory.
 
 *Controls.* Every control keeps the letter frequencies of the text it replaces and keeps rows as rows unless stated. For repeats (P2a, P2c), each row is regenerated from its own side's letter-pair (first-order Markov) statistics with the same first letter and length. For the word marks (P1b), the marks are put back at random within each row. For the cell above (P3a), the rows of each side are put in random order and the gain in bits on held-out rows (every fifth row) is recomputed. For pairing (P2b), which of the 53 adjacent pairs of sides count as "same leaf" is chosen at random. For the Calls, each word is replaced by a pseudo-word of the same length from the Calls' own letter pairs (P4a), and the Calls' gain from letter order under a letter-trigram model of the tables is compared with 1,000 samples each of Latin and English of the same size (P4b). For the two series of 25b–28b (P5a, P5c), the series labels are permuted within each row.
+
+*How AI was used.* The text studied is Peterson's edition, parsed by our code. Claude checked it against the page images on enlarged crops: the folio numbering, every disputed cell and a random sample of 80 cells, of which 78 agree with Peterson and 2 are doubtful. As advisers only, two vision models read 15 of the crops: a local qwen2.5vl:32b matched the edition on 101 of 198 target-row cells, and Claude (Anthropic, model Opus 5.5) answered 10 of the 15 and matched on 96 of 130 (the last of three runs over the same crops). An AI coding assistant (Claude Code) was used. Every step reruns without any AI service; the model readings are stored as data (as counts).
 
 = Results
 
@@ -172,7 +174,7 @@ Code (MIT), our data and all results (CC BY 4.0) are at #link("https://github.co
 
 = Acknowledgements
 
-This study stands on the work of Joseph H. Peterson, whose edition is its text, and of Donald Laycock, Aaron Leitch, Muhammad Zubair, Gary Cocciolilo, lorselq, anasofiadias and Jim Reeds. The analysis code was written with the help of an AI coding assistant (Claude, Anthropic); the author checked the results and is responsible for any errors.
+This study stands on the work of Joseph H. Peterson, whose edition is its text, and of Donald Laycock, Aaron Leitch, Muhammad Zubair, Gary Cocciolilo, lorselq, anasofiadias and Jim Reeds. The author is responsible for any errors.
 
 = References
 

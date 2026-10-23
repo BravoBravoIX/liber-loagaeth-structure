@@ -106,7 +106,7 @@ with at most six processes.
 |---|---|---|
 | L0 | `code/corpus.py` | Parses Peterson's page into one record per cell: side, row, column, the letters, and flags for Peterson's marks (uncertain, word end, accent, capital, orientation, small type, struck through, `[sic]`). Writes the corpus to a git-ignored folder and only counts and hashes to `data/corpus_manifest.json` |
 | L0 | `code/compare.py` (optional) | Our parse against the lorselq grids, aligned row by row, so that one missing cell does not count as a run of substitutions |
-| L0 | (by eye) | A seeded random sample of 80 cells on the 8 sides with images, and every disputed cell, read on enlarged crops of the page images (`data/image_checks.json`) |
+| L0 | (Claude) | A seeded random sample of 80 cells on the 8 sides with images, and every disputed cell, read on enlarged crops of the page images by Claude (`data/image_checks.json`) |
 | L0 | `code/calls.py` | The 48 Calls from Casaubon's dictation tables: 838 word rows, 4,402 letters, forward forms (`data/calls_manifest.json`) |
 | — | `code/reference_corpora.py` | Rebuilds the period Latin and English reference texts (`data/reference_corpora.json`) |
 | L1 | `code/reproduce_zubair.py` | Zubair's letter counts and IC range, by our corpus and by an emulation of a count of every letter on the page; his Soyga-rule test with 10,000 shuffles of each table and a per-table baseline, Holm over 15 tables |
@@ -148,6 +148,15 @@ are reported with raw p and labelled secondary.
 **One slip in the pre-registration.** It says the folded alphabet has 22 letters; it has 23
 (a–z without j, u and w). The code uses the 23 letters present, and nothing else changes.
 
+**How AI was used.** The text studied is Peterson's edition, parsed by our code. Claude checked
+it against the page images on enlarged crops: the folio numbering, every disputed cell and a
+seeded random sample of 80 cells on eight sides, of which 78 agree with Peterson and 2 are
+doubtful (`data/image_checks.json`). As advisers only, two vision models read 15 of the crops: a
+local qwen2.5vl:32b matched the edition on 101 of 198 target-row cells, and Claude (Anthropic,
+model Opus 5.5) answered 10 of the 15 and matched on 96 of 130 (the last of three runs over the
+same crops; `results/advisory_readers.json`). An AI coding assistant (Claude Code) was used. Every step reruns without any AI service; the model readings are
+stored as data (as counts).
+
 ## 4. Results
 
 ### L0: the corpus (`data/corpus_manifest.json`, `results/witness_compare.json`, `data/image_checks.json`)
@@ -166,7 +175,7 @@ are reported with raw p and labelled secondary.
   5b is a copy of its 4b (the image of f. 13v shows Peterson's 5b). Without 5b, 2 letters
   disagree in 70,030, both extra letters in lorselq (7a row 4 column 49; 7b row 20), and there
   are no substitutions. So this agreement checks our parse, not Peterson's reading.
-- **The images.** A seeded random sample of 80 cells on 8 sides: 78 agree with Peterson, 2 are
+- **The images** (read by Claude). A seeded random sample of 80 cells on 8 sides: 78 agree with Peterson, 2 are
   doubtful, none is clearly wrong. In each disputed case the image sides with Peterson (5b; 7a
   row 4 has one d; 7b row 20 has 48 letters, with an empty cell after the 8th, so Peterson's
   column numbers after it are one too low); on 12b rows 30–33 the last cell is lost to damage.
@@ -594,6 +603,8 @@ the original runs are in `results/run_records.json`.
 
 ## Versions
 
+- **1.1.1** (21 October 2026): documentation update: adds a "How AI was used" section,
+  tidies wording and removes files not needed to check the results. Results and data unchanged.
 - **1.1** (20 October 2026): adds the study of how the two series of 25b–28b are laid into the
   grid (section 4, "Pages 25b–28b"): its pre-registration, code (`code/weave*.py`, added to
   `code/run_all.sh`), results (`results/weave_*.json`, run records in

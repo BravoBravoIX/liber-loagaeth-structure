@@ -1,7 +1,7 @@
 {
- "what": "L0 spot checks of the corpus against the anasofiadias page images of Sloane MS 3189 (folio = leaf + 8), read by eye on enlarged crops. The images (rights unclear) and the crops are not included; the readings of whole row segments are left out because they reproduce the edition's text. Counts and short cell references only.. Kelley writes a secretary hand: c looks like a modern r, r like x or z, e like a reversed 3, h like a long-tailed s, g like y; readings below allow for this.",
+ "what": "L0 spot checks of the corpus against the anasofiadias page images of Sloane MS 3189 (folio = leaf + 8), read by Claude on enlarged crops. The images (rights unclear) and the crops are not included; the readings of whole row segments are left out because they reproduce the edition's text. Counts and short cell references only.. Kelley writes a secretary hand: c looks like a modern r, r like x or z, e like a reversed 3, h like a long-tailed s, g like y; readings below allow for this.",
  "date": "2026-10-19",
- "reader": "Claude agent (not a palaeographer); each reading is of a whole row segment in context",
+ "reader": "Claude; each reading is of a whole row segment in context",
  "folio_mapping": [
   {
    "side": "2a",
@@ -98,7 +98,7 @@
   }
  ],
  "random_sample": {
-  "method": "one 10-cell row segment per side with an image: Python random.Random(20261019), sides in leaf order, row = randint(1, 49), first column = randint(1, 40); each segment read by eye in context against the edition",
+  "method": "one 10-cell row segment per side with an image: Python random.Random(20261019), sides in leaf order, row = randint(1, 49), first column = randint(1, 40); each segment read by Claude in context against the edition",
   "segments": [
    {
     "side": "2a",

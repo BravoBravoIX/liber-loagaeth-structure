@@ -2,7 +2,7 @@
 
 Vendored from the author's solvability-first-framework (targets/corpora_period/latin/build.py,
 build_norm part, and targets/corpora_period/english/build.py, commit 3a7e8c1) and from the
-train/held-out split of raiven-cipher-hunter (hunter/score/corpora.py, split_lines). The cleaning
+train/held-out split of the author's private working repository (function split_lines). The cleaning
 rules are unchanged; only the input folders and the output step differ. The study used the
 "train" part of each split, as here.
 
@@ -41,7 +41,7 @@ NORM_ORDER = [
     "Idiota_de_mente",
 ]
 
-# ---------------------------------------------------------------- split (hunter/score/corpora.py)
+# ---------------------------------------------------------------- split (split_lines)
 
 BLOCK_CHARS = 4000  # split block size (whole lines, about this many characters)
 HELDOUT_EVERY = 10  # every 10th block is held out

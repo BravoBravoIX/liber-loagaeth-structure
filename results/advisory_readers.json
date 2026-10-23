@@ -5,7 +5,6 @@
   "qwen2.5vl_32b_local": {
    "model": "qwen2.5vl:32b",
    "where_run": "locally (Ollama), temperature 0, seed 20261019",
-   "prompt": "This image is a crop from a 16th-century manuscript table written in English secretary hand. Each small square cell holds one letter (a few cells hold a digit or a capital). Transcribe every line of the table that is visible, from top to bottom. Output one line of text per table row, with the letters separated by single spaces, in lower case. Write ? for a letter you cannot read and _ for an empty cell. Secretary-hand forms: c looks like a modern r; r often looks like x or z; e can look like a reversed 3 or a Greek epsilon; h has a long tail below the line; g can look like y. Output only the transcription.",
    "corpus_sha256": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18",
    "target_row_cells": 198,
    "target_row_cells_matched": 101,
@@ -480,7 +479,6 @@
   "claude_opus_5_5_api": {
    "model": "claude-opus-5-5",
    "where_run": "Anthropic API",
-   "prompt": "This image is a crop from a 16th-century manuscript table written in English secretary hand. Each small square cell holds one letter (a few cells hold a digit or a capital). Transcribe every line of the table that is visible, from top to bottom. Output one line of text per table row, with the letters separated by single spaces, in lower case. Write ? for a letter you cannot read and _ for an empty cell. Secretary-hand forms: c looks like a modern r; r often looks like x or z; e can look like a reversed 3 or a Greek epsilon; h has a long tail below the line; g can look like y. Answer only with JSON of the form {\"lines\": [[\"a\", \"b\", ...], ...]}: one list per table row, top to bottom, one single-character string per cell (\"?\" unreadable, \"_\" empty).",
    "prompt_sha256": "1cabf1c245600977490cc2000283758744357f309c25699f590486d7b32331fb",
    "corpus_sha256": "4b748035da85702ba8431221181d9a64ee1e04023d40311f0e59851de7f50e18",
    "target_row_cells": 130,

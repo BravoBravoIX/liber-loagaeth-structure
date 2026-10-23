@@ -5,7 +5,7 @@ authors:
   - family-names: Burford
     given-names: Brett
     orcid: "https://orcid.org/0009-0003-6599-8297"
-version: "1.1"
+version: "1.1.1"
 doi: 10.5281/zenodo.23487865
-date-released: 2026-10-20
+date-released: 2026-10-21
 repository-code: "https://github.com/BravoBravoIX/liber-loagaeth-structure"
